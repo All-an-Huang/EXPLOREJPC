@@ -87,6 +87,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(475, 175)
 layout_mode = 2
 text = "EXPLORE JPC"
+editable = false
 
 [connection signal="pressed" from="margin container/button h box/button v box/start button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="margin container/button h box/button v box/options button" to="." method="_on_options_button_pressed"]
