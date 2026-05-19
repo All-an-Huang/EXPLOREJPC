@@ -13,6 +13,7 @@ grow_vertical = 2
 script = ExtResource("1_l6cm7")
 
 [node name="template" type="TextureRect" parent="." unique_id=1008210019]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -83,7 +84,7 @@ custom_minimum_size = Vector2(0, 27.145)
 layout_mode = 2
 
 [node name="title" type="TextEdit" parent="margin container/title h box/title v box" unique_id=1783433125]
-custom_minimum_size = Vector2(150, 10)
+custom_minimum_size = Vector2(475, 175)
 layout_mode = 2
 text = "EXPLORE JPC"
 
