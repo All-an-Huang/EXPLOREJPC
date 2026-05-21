@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://c3tsn13soey4p" path="res://scripts/options_menu.gd" id="1_ijpji"]
 [ext_resource type="Texture2D" uid="uid://vjhwco8mk26v" path="res://option_menu.png" id="1_liyum"]
+[ext_resource type="ButtonGroup" uid="uid://bjkenyda1vhew" path="res://buttongroups/languagecheck.tres" id="3_hm4m4"]
+[ext_resource type="ButtonGroup" uid="uid://bnjoxjwkubs5x" path="res://buttongroups/optioncheck.tres" id="4_lfjc7"]
 
 [node name="options menu" type="Control" unique_id=729690293]
 layout_mode = 3
@@ -90,14 +92,17 @@ layout_mode = 2
 size_flags_horizontal = 0
 theme_override_constants/separation = 10
 
-[node name="CheckBox" type="CheckBox" parent="margin container/side panel h box/side panel v box/language panel/checkbox h box/checkbox v box" unique_id=1728274930]
+[node name="english" type="CheckBox" parent="margin container/side panel h box/side panel v box/language panel/checkbox h box/checkbox v box" unique_id=1728274930]
 layout_mode = 2
+button_group = ExtResource("3_hm4m4")
 
-[node name="CheckBox2" type="CheckBox" parent="margin container/side panel h box/side panel v box/language panel/checkbox h box/checkbox v box" unique_id=2076793069]
+[node name="japanese" type="CheckBox" parent="margin container/side panel h box/side panel v box/language panel/checkbox h box/checkbox v box" unique_id=2076793069]
 layout_mode = 2
+button_group = ExtResource("3_hm4m4")
 
-[node name="CheckBox3" type="CheckBox" parent="margin container/side panel h box/side panel v box/language panel/checkbox h box/checkbox v box" unique_id=1420210339]
+[node name="etc" type="CheckBox" parent="margin container/side panel h box/side panel v box/language panel/checkbox h box/checkbox v box" unique_id=1420210339]
 layout_mode = 2
+button_group = ExtResource("3_hm4m4")
 
 [node name="language h box2" type="HBoxContainer" parent="margin container/side panel h box/side panel v box/language panel" unique_id=969143082]
 custom_minimum_size = Vector2(0, 115)
@@ -223,10 +228,12 @@ layout_mode = 2
 [node name="option 1" type="CheckBox" parent="margin container/panel h box/panel/options panel/choice v box/choice h box/checkbox h box" unique_id=1935967723]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
+button_group = ExtResource("4_lfjc7")
 
 [node name="option 2" type="CheckBox" parent="margin container/panel h box/panel/options panel/choice v box/choice h box/checkbox h box" unique_id=1792625103]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
+button_group = ExtResource("4_lfjc7")
 
 [node name="HSlider" type="HSlider" parent="margin container/panel h box/panel/options panel/choice v box/choice h box" unique_id=722510308]
 custom_minimum_size = Vector2(300, 0)
