@@ -4,10 +4,10 @@ var speed
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0
 const JUMP_VELOCITY = 4.5
-const SENSITIVITY = 0.005
+const SENSITIVITY = 0.004
 
 #bob variables
-const BOB_FREQ = 2.0
+const BOB_FREQ = 2.4
 const BOB_AMP = 0.08
 var t_bob = 0.0
 
@@ -73,6 +73,6 @@ func _physics_process(delta: float) -> void:
 
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
-	pos.y = sin(time * BOB_FREQ * BOB_AMP)
+	pos.y = sin(time * BOB_FREQ) *  BOB_AMP
 	pos.x = cos (time * BOB_FREQ / 2) * BOB_AMP
 	return pos
