@@ -172,3 +172,32 @@ size = Vector3(4.0758944, 4, 4.5963984)
 transform = Transform3D(-0.98778653, 0, 0.15581399, 0, 1, 0, -0.15581399, 0, -0.98778653, 39.63343, 2, -58.083546)
 use_collision = true
 size = Vector3(3.5986855, 4, 4.5963984)
+
+[node name="INTBLOCK" type="Node3D" parent="." unique_id=1617476046]
+
+[node name="INT1" type="CSGBox3D" parent="INTBLOCK" unique_id=1446128736]
+transform = Transform3D(-0.9860484, 0, 0.16645907, 0, 1, 0, -0.16645907, 0, -0.9860484, 20.53258, 2, -14.493331)
+use_collision = true
+size = Vector3(6.7978497, 4, 3.4125643)
+
+[node name="INT2" type="CSGBox3D" parent="INTBLOCK" unique_id=1660571823]
+transform = Transform3D(-0.9860484, 0, 0.16645907, 0, 1, 0, -0.16645907, 0, -0.9860484, 21.008478, 2, -10.269866)
+use_collision = true
+size = Vector3(7.5751944, 4, 4.52574)
+
+[node name="EBLOCK+GYM" type="Node3D" parent="." unique_id=1985558440]
+
+[node name="GYM" type="CSGBox3D" parent="EBLOCK+GYM" unique_id=635257562]
+transform = Transform3D(-0.2048035, 0, 0.97880316, 0, 1, 0, -0.97880316, 0, -0.2048035, 25.989904, 2, -25.700882)
+use_collision = true
+size = Vector3(13.124725, 4, 18.289381)
+
+[node name="E1" type="CSGBox3D" parent="EBLOCK+GYM" unique_id=468964529]
+transform = Transform3D(-0.40194774, 0, 0.91566265, 0, 1, 0, -0.91566265, 0, -0.40194774, 21.513357, 5.999897, -27.188583)
+use_collision = true
+size = Vector3(4.067374, 4, 6.0024815)
+
+[node name="E2" type="CSGBox3D" parent="EBLOCK+GYM" unique_id=130062392]
+transform = Transform3D(-0.40194774, 0, 0.91566265, 0, 1, 0, -0.91566265, 0, -0.40194774, 23.252197, 5.999897, -23.227392)
+use_collision = true
+size = Vector3(4.270717, 4, 6.0024815)
