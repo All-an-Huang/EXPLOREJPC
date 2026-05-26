@@ -31,6 +31,7 @@ environment = SubResource("Environment_0rdsr")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1853658947]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+visible = false
 shadow_enabled = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1181687798]
@@ -57,147 +58,148 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
 [node name="CBLOCK" type="Node3D" parent="." unique_id=1885011654]
 
-[node name="C1" type="CSGBox3D" parent="CBLOCK" unique_id=1604538608]
-transform = Transform3D(-0.9773236, 0, 0.21175134, 0, 1, 0, -0.21175134, 0, -0.9773236, 44.33618, 2, -68.74567)
+[node name="C1" type="CSGPolygon3D" parent="CBLOCK" unique_id=175544515]
+transform = Transform3D(-0.97732353, 0.21175142, -3.7023792e-08, 0, -4.371139e-08, -4, -0.21175142, -0.97732353, 1.7088067e-07, 44.33618, 0, -68.74567)
 use_collision = true
-size = Vector3(7.3615646, 4, 5.9050903)
+polygon = PackedVector2Array(-4.3239746, -2.5077133, -5.2031403, 2.9700851, 0.4296646, 2.7069092, -0.16537476, -2.6947937)
 
-[node name="C2" type="CSGBox3D" parent="CBLOCK" unique_id=1017832575]
-transform = Transform3D(-0.9773236, 0, 0.21175134, 0, 1, 0, -0.21175134, 0, -0.9773236, 51.54534, 2, -67.1837)
+[node name="C2" type="CSGPolygon3D" parent="CBLOCK" unique_id=1455419440]
+transform = Transform3D(-0.97732353, 0.21175142, -3.7023792e-08, 0, -4.371139e-08, -4, -0.21175142, -0.97732353, 1.7088067e-07, 51.54534, 0, -67.1837)
 use_collision = true
-size = Vector3(7.20172, 4, 5.9050903)
+polygon = PackedVector2Array(-2.0394287, -2.272728, -2.2467003, 3.0758362, 2.0558662, 2.910286, 2.8770523, -2.490242)
 
-[node name="C3" type="CSGBox3D" parent="CBLOCK" unique_id=1309309835]
-transform = Transform3D(-0.9773236, 0, 0.21175134, 0, 1, 0, -0.21175134, 0, -0.9773236, 58.25834, 2, -67.422844)
+[node name="C3" type="CSGPolygon3D" parent="CBLOCK" unique_id=1832391961]
+transform = Transform3D(-0.97732353, 0.21175142, -3.7023792e-08, 0, -4.371139e-08, -4, -0.21175142, -0.97732353, 1.7088067e-07, 58.25834, 0, -67.422844)
 use_collision = true
-size = Vector3(5.6959515, 4, 2.5946808)
+polygon = PackedVector2Array(-0.8383446, -3.6070938, -1.2867279, 1.5885849, 4.1144066, 1.4257431, 4.322529, -3.9536896)
 
-[node name="C4" type="CSGBox3D" parent="CBLOCK" unique_id=295504438]
-transform = Transform3D(-0.9773236, 0, 0.21175134, 0, 1, 0, -0.21175134, 0, -0.9773236, 63.70385, 2, -65.51972)
+[node name="C4" type="CSGPolygon3D" parent="CBLOCK" unique_id=470004285]
+transform = Transform3D(-0.97732353, 0.21175142, -3.7023792e-08, 0, -4.371139e-08, -4, -0.21175142, -0.97732353, 1.7088067e-07, 63.70385, 0, -65.51972)
 use_collision = true
-size = Vector3(5.5415745, 4, 4.0084114)
+polygon = PackedVector2Array(-2.5862808, -0.6478195, -3.3808594, 2.8190079, 4.317974, 2.36734, 4.6700706, -1.285141)
 
-[node name="C5" type="CSGBox3D" parent="CBLOCK" unique_id=1548487406]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 61.994774, 2, -62.676777)
+[node name="C5" type="CSGPolygon3D" parent="CBLOCK" unique_id=1236691174]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 61.994774, 0, -62.676777)
 use_collision = true
-size = Vector3(6.8488336, 4, 3.5904818)
+polygon = PackedVector2Array(-3.2416077, -1.3828506, -3.21278, 2.8743286, 1.6738014, 1.7090454, 1.5472412, -1.2958527)
 
-[node name="C6" type="CSGBox3D" parent="CBLOCK" unique_id=640316479]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 60.82909, 2, -59.5966)
+[node name="C6" type="CSGPolygon3D" parent="CBLOCK" unique_id=1929253002]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 60.82909, 0, -59.5966)
+visible = false
 use_collision = true
-size = Vector3(6.8488336, 4, 2.8097298)
+polygon = PackedVector2Array(-3.370224, -2.1313782, -3.1987076, 1.8414993, 3.6224213, 1.8973694, 1, 0)
 
-[node name="language faculity" type="CSGBox3D" parent="CBLOCK" unique_id=164131267]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 61.17765, 2, -54.981037)
+[node name="language faculity" type="CSGPolygon3D" parent="CBLOCK" unique_id=281340843]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 61.17765, 0, -54.981037)
+visible = false
 use_collision = true
-size = Vector3(2.929499, 4, 5.3482766)
 
-[node name="C f toilet" type="CSGBox3D" parent="CBLOCK" unique_id=1674354586]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 58.673637, 2, -56.95864)
+[node name="C f toilet" type="CSGPolygon3D" parent="CBLOCK" unique_id=135158889]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 58.673637, 0, -56.20541)
+visible = false
 use_collision = true
-size = Vector3(2.7443612, 4, 3.421697)
 
-[node name="C7" type="CSGBox3D" parent="CBLOCK" unique_id=889372325]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 58.317905, 2, -51.81509)
+[node name="C7" type="CSGPolygon3D" parent="CBLOCK" unique_id=613410382]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 58.317905, 0, -51.81509)
 use_collision = true
-size = Vector3(6.0375757, 4, 2.4246006)
+polygon = PackedVector2Array(-2.9922905, -1.2844391, -2.9876633, 1.0521011, 2.953659, 0.3802414, 3.0042381, -2.031311)
 
-[node name="C8" type="CSGBox3D" parent="CBLOCK" unique_id=104224270]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 57.265232, 2, -49.03353)
+[node name="C8" type="CSGPolygon3D" parent="CBLOCK" unique_id=2061883248]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 57.265232, 0, -49.03353)
 use_collision = true
-size = Vector3(6.0375757, 4, 3.3623757)
+polygon = PackedVector2Array(-3.036541, -1.5230713, -2.9814262, 1.5767441, 3.015335, 0.8468933, 2.9504967, -1.6587143)
 
-[node name="C9" type="CSGBox3D" parent="CBLOCK" unique_id=737495768]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 56.10082, 2, -45.95671)
+[node name="C9" type="CSGPolygon3D" parent="CBLOCK" unique_id=964631738]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 56.10082, 0, -45.95671)
 use_collision = true
-size = Vector3(6.0375757, 4, 2.9126065)
+polygon = PackedVector2Array(-3.0490112, -1.0211182, -2.9743538, 1.730423, 2.9206047, 1.5901337, 2.8493996, -1.1440277)
 
-[node name="C10" type="CSGBox3D" parent="CBLOCK" unique_id=1781313214]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 54.685043, 2, -42.902374)
+[node name="C10" type="CSGPolygon3D" parent="CBLOCK" unique_id=788800481]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 54.685043, 0, -42.902374)
 use_collision = true
-size = Vector3(6.5236707, 4, 3.512087)
+polygon = PackedVector2Array(-3.401291, -1.3545761, -3.250637, 2.2732964, 3.5032272, 2.0979462, 3.3653374, -1.1267014)
 
-[node name="C11" type="CSGBox3D" parent="CBLOCK" unique_id=794415601]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 53.384228, 2, -39.498245)
+[node name="C11" type="CSGPolygon3D" parent="CBLOCK" unique_id=949463545]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 53.384228, 0, -39.498245)
 use_collision = true
-size = Vector3(6.547108, 4, 3.5021822)
+polygon = PackedVector2Array(-3.451458, -1.4570847, -3.4010963, 2.23983, 3.3238907, 2.438652, 3.2732887, -1.0332108)
 
-[node name="C12" type="CSGBox3D" parent="CBLOCK" unique_id=741422339]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 52.118847, 2, -36.14515)
+[node name="C12" type="CSGPolygon3D" parent="CBLOCK" unique_id=1180995718]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 52.118847, 0, -36.14515)
 use_collision = true
-size = Vector3(6.5403943, 4, 3.2617474)
+polygon = PackedVector2Array(-3.5072365, -1.249382, -3.4456673, 2.073944, 3.2236214, 2.4887352, 3.0530434, -1.2295113)
 
-[node name="C13" type="CSGBox3D" parent="CBLOCK" unique_id=288731554]
-transform = Transform3D(-0.935265, 0, 0.35394835, 0, 1, 0, -0.35394835, 0, -0.935265, 51.01175, 2, -33.128727)
+[node name="C13" type="CSGPolygon3D" parent="CBLOCK" unique_id=686304622]
+transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 51.01175, 0, -33.128727)
 use_collision = true
-size = Vector3(6.475941, 4, 2.7917552)
+polygon = PackedVector2Array(-3.6351967, -1.5237045, -3.4910355, 1.9061737, 3.0858116, 1.9919052, 2.9425316, -2.1092377)
 
-[node name="C m toilet" type="CSGPolygon3D" parent="CBLOCK" unique_id=2005395347]
-transform = Transform3D(0.9996637, 0.025932685, 7.728542e-10, 0, 2.9802322e-08, -1, -0.025932685, 0.9996637, 2.97923e-08, 50.17987, 0, -29)
+[node name="C m toilet" type="CSGPolygon3D" parent="CBLOCK" unique_id=1735041686]
+transform = Transform3D(0.9996637, 0.10373074, -1.1335537e-09, 0, -1.7484555e-07, -1, -0.025932685, 3.9986548, -4.3696687e-08, 50.17987, 0, -29)
 use_collision = true
-polygon = PackedVector2Array(-2.5705376, -3.7477913, -1.5852127, -0.19070816, 3.337822, -1.4442692)
+polygon = PackedVector2Array(-2.5734444, -0.8094568, -1.9069519, -0.27746153, 3.8004189, -0.302289)
 depth = 4.0
 
-[node name="C14" type="CSGBox3D" parent="CBLOCK" unique_id=218319370]
-transform = Transform3D(-0.9500429, 0, -0.31211928, 0, 1, 0, 0.31211928, 0, -0.9500429, 51.59284, 2, -28.463406)
+[node name="C14" type="CSGPolygon3D" parent="CBLOCK" unique_id=611316902]
+transform = Transform3D(-0.95004284, -0.31211936, 5.4572684e-08, 0, -4.371139e-08, -4, 0.31211933, -0.9500429, 1.6611078e-07, 51.59284, 0, -28.463406)
 use_collision = true
-size = Vector3(5.4606824, 4, 2.4691317)
+polygon = PackedVector2Array(-2.8008423, -0.7773304, -2.7767982, 0.9940071, 2.682167, 2.4840012, 2.6663628, 0.888299)
 
-[node name="maths faculty" type="CSGBox3D" parent="CBLOCK" unique_id=1712492491]
-transform = Transform3D(-0.9500429, 0, -0.31211928, 0, 1, 0, 0.31211928, 0, -0.9500429, 52.138493, 2, -25.873138)
+[node name="maths faculty" type="CSGPolygon3D" parent="CBLOCK" unique_id=2004301219]
+transform = Transform3D(-0.95004284, -0.31211936, 5.4572684e-08, 0, -4.371139e-08, -4, 0.31211933, -0.9500429, 1.6611078e-07, 52.138493, 0, -25.873138)
 use_collision = true
-size = Vector3(6.0408297, 4, 2.2522926)
+polygon = PackedVector2Array(-3.1019402, 1.734539, 2.327896, 3.4252253, 2.224453, -1.5798349, -3.1133614, -2.2902584)
 
-[node name="C15" type="CSGBox3D" parent="CBLOCK" unique_id=2045064411]
-transform = Transform3D(-0.9500429, 0, -0.31211928, 0, 1, 0, 0.31211928, 0, -0.9500429, 47.582382, 2, -25.769104)
+[node name="C15" type="CSGPolygon3D" parent="CBLOCK" unique_id=651437546]
+transform = Transform3D(-0.95004284, -0.31211936, 5.4572684e-08, 0, -4.371139e-08, -4, 0.31211933, -0.9500429, 1.6611078e-07, 47.582382, 0, -25.769104)
 use_collision = true
-size = Vector3(2.3199754, 4, 5.0850563)
+polygon = PackedVector2Array(-2.1411972, -2.9274855, -1.948555, 1.5656633, 1.2353439, 1.8610363, 0.81201553, -2.5793896)
 
-[node name="C16" type="CSGBox3D" parent="CBLOCK" unique_id=1012030463]
-transform = Transform3D(-0.98778653, 0, 0.15581399, 0, 1, 0, -0.15581399, 0, -0.98778653, 51.691425, 2, -56.18151)
+[node name="C16" type="CSGPolygon3D" parent="CBLOCK" unique_id=1330295772]
+transform = Transform3D(-0.98778653, 0.15581392, -2.724337e-08, 0, -4.371139e-08, -4, -0.15581393, -0.9877864, 1.7271006e-07, 51.691425, 0, -56.18151)
 use_collision = true
-size = Vector3(3.7428777, 4, 4.5963984)
+polygon = PackedVector2Array(-1.9824944, -2.3170776, -2.8152466, 2.2867126, 1.6522675, 2.2859116, 2.3536377, -2.3581505)
 
-[node name="C17" type="CSGBox3D" parent="CBLOCK" unique_id=300560833]
-transform = Transform3D(-0.98778653, 0, 0.15581399, 0, 1, 0, -0.15581399, 0, -0.98778653, 47.69994, 2, -56.81113)
+[node name="C17" type="CSGPolygon3D" parent="CBLOCK" unique_id=1832777098]
+transform = Transform3D(-0.98778653, 0.15581392, -2.724337e-08, 0, -4.371139e-08, -4, -0.15581393, -0.9877864, 1.7271006e-07, 47.69994, 0, -56.81113)
 use_collision = true
-size = Vector3(4.1700335, 4, 4.5963984)
+polygon = PackedVector2Array(-1.5883293, -2.38562, -2.3054085, 2.3170586, 0.87643814, 2.371746, 2.1710052, -2.4699936)
 
-[node name="C18" type="CSGBox3D" parent="CBLOCK" unique_id=802244997]
-transform = Transform3D(-0.98778653, 0, 0.15581399, 0, 1, 0, -0.15581399, 0, -0.98778653, 43.556576, 2, -57.464706)
+[node name="C18" type="CSGPolygon3D" parent="CBLOCK" unique_id=1744514228]
+transform = Transform3D(-0.98778653, 0.15581392, -2.724337e-08, 0, -4.371139e-08, -4, -0.15581393, -0.9877864, 1.7271006e-07, 43.556576, 0, -57.464706)
 use_collision = true
-size = Vector3(4.0758944, 4, 4.5963984)
+polygon = PackedVector2Array(-1.9255142, -2.407875, -3.289589, 2.4282227, 1.1356506, 2.4131699, 2.292797, -2.4305954)
 
-[node name="C19" type="CSGBox3D" parent="CBLOCK" unique_id=898755699]
-transform = Transform3D(-0.98778653, 0, 0.15581399, 0, 1, 0, -0.15581399, 0, -0.98778653, 39.63343, 2, -58.083546)
+[node name="C19" type="CSGPolygon3D" parent="CBLOCK" unique_id=629552697]
+transform = Transform3D(-0.98778653, 0.15581392, -2.724337e-08, 0, -4.371139e-08, -4, -0.15581393, -0.9877864, 1.7271006e-07, 39.63343, 0, -58.083546)
 use_collision = true
-size = Vector3(3.5986855, 4, 4.5963984)
+polygon = PackedVector2Array(-1.5407715, -2.3520088, -2.6751556, 2.3459854, 1.7577896, 2.2920303, 2.648859, -2.313652)
 
 [node name="INTBLOCK" type="Node3D" parent="." unique_id=1617476046]
 
-[node name="INT1" type="CSGBox3D" parent="INTBLOCK" unique_id=1446128736]
-transform = Transform3D(-0.9860484, 0, 0.16645907, 0, 1, 0, -0.16645907, 0, -0.9860484, 20.53258, 2, -14.493331)
+[node name="INT1" type="CSGPolygon3D" parent="INTBLOCK" unique_id=576158656]
+transform = Transform3D(-3.9441936, 0.66583586, -2.910461e-08, 0, -1.7484555e-07, -4, -0.66583586, -3.9441936, 1.7240617e-07, 20.53258, 0, -14.473203)
 use_collision = true
-size = Vector3(6.7978497, 4, 3.4125643)
+polygon = PackedVector2Array(-0.78813124, -0.5215337, -0.9775424, 0.4367261, 0.74299574, 0.43467236, 0.9275849, -0.47062802)
 
-[node name="INT2" type="CSGBox3D" parent="INTBLOCK" unique_id=1660571823]
-transform = Transform3D(-0.9860484, 0, 0.16645907, 0, 1, 0, -0.16645907, 0, -0.9860484, 21.008478, 2, -10.269866)
+[node name="INT2" type="CSGPolygon3D" parent="INTBLOCK" unique_id=629573390]
+transform = Transform3D(-3.9441936, 0.66583586, -2.910461e-08, 0, -1.7484555e-07, -4, -0.66583586, -3.9441936, 1.7240617e-07, 20.55, 0, -9.727)
 use_collision = true
-size = Vector3(7.5751944, 4, 4.52574)
+polygon = PackedVector2Array(-1.1558242, 0.24962401, -0.9462228, 0.61536956, 0.5640044, 0.65689707, 0.6498065, 0.29453444, 0.84998703, 0.28119254, 0.9627676, -0.36906314, -0.3405962, -0.38420773, -0.9267564, -0.03522563, -0.9023137, 0.10049462)
 
 [node name="EBLOCK+GYM" type="Node3D" parent="." unique_id=1985558440]
 
-[node name="GYM" type="CSGBox3D" parent="EBLOCK+GYM" unique_id=635257562]
-transform = Transform3D(-0.2048035, 0, 0.97880316, 0, 1, 0, -0.97880316, 0, -0.2048035, 25.989904, 2, -25.700882)
+[node name="GYM" type="CSGPolygon3D" parent="EBLOCK+GYM" unique_id=576031850]
+transform = Transform3D(-0.8179843, 3.9154696, -1.7115062e-07, 0, -1.7484555e-07, -4, -3.9154696, -0.8179843, 3.5755228e-08, 25.99, 0, -25.701)
 use_collision = true
-size = Vector3(13.124725, 4, 18.289381)
+polygon = PackedVector2Array(-1.6468923, -1.7206855, -1.6561623, 2.88863, 1.7682934, 2.2067413, 1.3171787, -2.0641031, 0.9733257, -2.0083385, 0.9957695, -2.6618905, -0.03667164, -2.430614, -0.042140007, -2.6361399, -0.58525515, -2.546362, -0.5893631, -2.3021722, -1.4177334, -2.1535044)
 
-[node name="E1" type="CSGBox3D" parent="EBLOCK+GYM" unique_id=468964529]
-transform = Transform3D(-0.40194774, 0, 0.91566265, 0, 1, 0, -0.91566265, 0, -0.40194774, 21.513357, 5.999897, -27.188583)
+[node name="E1" type="CSGPolygon3D" parent="EBLOCK+GYM" unique_id=1860922291]
+transform = Transform3D(-1.6077912, 3.6626503, -1.6009953e-07, 0, -1.7484555e-07, -4, -3.6626503, -1.6077912, 7.027879e-08, 21.513357, 4, -27.188583)
 use_collision = true
-size = Vector3(4.067374, 4, 6.0024815)
+polygon = PackedVector2Array(-0.62135816, -0.758688, -0.8734889, 0.5470133, 0.25306988, 0.50740147, 0.59798765, -0.7238064)
 
-[node name="E2" type="CSGBox3D" parent="EBLOCK+GYM" unique_id=130062392]
-transform = Transform3D(-0.40194774, 0, 0.91566265, 0, 1, 0, -0.91566265, 0, -0.40194774, 23.252197, 5.999897, -23.227392)
+[node name="E2" type="CSGPolygon3D" parent="EBLOCK+GYM" unique_id=2052024188]
+transform = Transform3D(-1.6077912, 3.6626503, -1.6009953e-07, 0, -1.7484555e-07, -4, -3.6626503, -1.6077912, 7.027879e-08, 23.254364, 4, -21.468828)
 use_collision = true
-size = Vector3(4.270717, 4, 6.0024815)
+polygon = PackedVector2Array(-0.24670696, -0.5858021, -0.5398934, 0.72556305, 0.5669353, 0.72592163, 0.8192611, -0.5843096)
