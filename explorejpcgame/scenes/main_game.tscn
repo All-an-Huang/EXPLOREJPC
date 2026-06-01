@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d1st48vuk13al"]
 
 [ext_resource type="Texture2D" uid="uid://cprxfcy51yi71" path="res://school_map.jpeg" id="1_72e8q"]
-[ext_resource type="Script" uid="uid://c2n3ewh8l0tnf" path="res://scripts/character.gd" id="1_s3esy"]
+[ext_resource type="PackedScene" uid="uid://dck5u1ykk08vr" path="res://prefabs/player.tscn" id="2_72e8q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_72e8q"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -19,11 +19,6 @@ glow_enabled = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2op2"]
 albedo_texture = ExtResource("1_72e8q")
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_ipu61"]
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ygxny"]
-points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4760704, 0.49888408, 0.16971254, 0.5591441, 0.46417162, 0.23105091, -0.8035912, 0.32045516, 0.40741014, 0.651043, -0.24352328, -0.4827893, 0.59484255, 0.082213186, -0.3628679, -0.68231165, 0.2896967, 0.46904355, -0.65452886, -0.06627126, -0.12744367, 0.8427015, -0.33810276, -0.39343542, -0.6839421, -0.24471663, 0.43825462, 0.62330925, 0.20084947, 0.0841477, 0.977454, 0.11479468, -0.06820232, -0.9764576, -0.12927033, 0.20054972, -0.56312895, -0.4514544, -0.18552664, 0.59545326, -0.4534751, -0.27336287, 0.59226835, 0.40775412, -0.0069364863, -0.47682306, 0.49966025, 0.37582088, -0.5886136, 0.31695515, 0.111579016, 0.5630594, -0.48117727, -0.41725034, 0.5278656, -0.27049688, -0.48454633, -0.59697217, -0.06650971, -0.27974695, 0.90856135, 0.05333608, -0.25019687, -0.8807117, 0.20531891, 0.263647, -0.90277094, -0.1273943, 0.29336792, 0.8715263, -0.15719566, 0.3734115, -0.5263189, -0.32824618, 0.4996626, 0.47664148, -0.0068885577, 0.053105574, 0.8750009, 0.32470253, -0.15454252, -0.5908538, 0.4658794, -0.09727988, -0.7823577, -0.39818847, -0.3876489, -0.49817133, 0.31564978, -0.30067965, -0.58799505, -0.38890144)
-
 [node name="main_game" type="Node3D" unique_id=1592168361]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=986709125]
@@ -39,22 +34,8 @@ material_override = SubResource("StandardMaterial3D_d2op2")
 use_collision = true
 size = Vector3(200, 0.1, 200)
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=208308474]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.391537, 0, -32.887325)
-script = ExtResource("1_s3esy")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=852687697]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("CapsuleMesh_ipu61")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1740079887]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("ConvexPolygonShape3D_ygxny")
-
-[node name="head" type="Node3D" parent="CharacterBody3D" unique_id=2135310179]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
-
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/head" unique_id=1763640739]
+[node name="Player" parent="." unique_id=1821036914 instance=ExtResource("2_72e8q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0.110580444, -44)
 
 [node name="CBLOCK" type="Node3D" parent="." unique_id=1885011654]
 
@@ -85,19 +66,18 @@ polygon = PackedVector2Array(-3.2416077, -1.3828506, -3.21278, 2.8743286, 1.6738
 
 [node name="C6" type="CSGPolygon3D" parent="CBLOCK" unique_id=1929253002]
 transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 60.82909, 0, -59.5966)
-visible = false
 use_collision = true
-polygon = PackedVector2Array(-3.370224, -2.1313782, -3.1987076, 1.8414993, 3.6224213, 1.8973694, 1, 0)
+polygon = PackedVector2Array(-3.26305, -0.32553864, -3.1987076, 1.8414993, 3.6224213, 1.8973694, 3.5265198, 0.0039749146)
 
 [node name="language faculity" type="CSGPolygon3D" parent="CBLOCK" unique_id=281340843]
 transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 61.17765, 0, -54.981037)
-visible = false
 use_collision = true
+polygon = PackedVector2Array(-1.3744469, -2.8386612, -1.2606163, 3.78611, 5.5150948, 4.0346146, 5.5704613, -0.0004119873, 0.9041176, -0.13637543, 0.82561874, -3.0615616)
 
 [node name="C f toilet" type="CSGPolygon3D" parent="CBLOCK" unique_id=135158889]
 transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 58.673637, 0, -56.20541)
-visible = false
 use_collision = true
+polygon = PackedVector2Array(-1.9335175, -3.4819489, -1.8783073, -0.4992218, 1.8461609, -0.46362305, 1.757782, -3.8256226)
 
 [node name="C7" type="CSGPolygon3D" parent="CBLOCK" unique_id=613410382]
 transform = Transform3D(-0.93526495, 0.35394835, -6.18863e-08, 0, -4.371139e-08, -4, -0.35394835, -0.93526495, 1.6352692e-07, 58.317905, 0, -51.81509)
@@ -203,3 +183,77 @@ polygon = PackedVector2Array(-0.62135816, -0.758688, -0.8734889, 0.5470133, 0.25
 transform = Transform3D(-1.6077912, 3.6626503, -1.6009953e-07, 0, -1.7484555e-07, -4, -3.6626503, -1.6077912, 7.027879e-08, 23.254364, 4, -21.468828)
 use_collision = true
 polygon = PackedVector2Array(-0.24670696, -0.5858021, -0.5398934, 0.72556305, 0.5669353, 0.72592163, 0.8192611, -0.5843096)
+
+[node name="MBLOCK" type="Node3D" parent="." unique_id=1825126061]
+
+[node name="M4" type="CSGPolygon3D" parent="MBLOCK" unique_id=245587613]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 16.205196, 0, 45.354675)
+polygon = PackedVector2Array(-7.602642, -3.9454422, -9.473356, 1.1523895, -1.6759253, 3.614151, 0.29493713, -2.2087975)
+
+[node name="M5" type="CSGPolygon3D" parent="MBLOCK" unique_id=1970669258]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-7.4665575, -4.3121147, -9.793021, 2.568489, -2.0108738, 4.3551865, 0.45030975, -2.9419403)
+
+[node name="M6" type="CSGPolygon3D" parent="MBLOCK" unique_id=1733621215]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-3.420474, -10.206928, -5.3534775, -3.929512, 0.3650322, -2.9970207, 2.7311897, -9.264664)
+
+[node name="M7" type="CSGPolygon3D" parent="MBLOCK" unique_id=1519109245]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-13.99378, -11.132439, -15.135441, -5.596176, -5.353758, -3.9138832, -3.6698027, -9.517073)
+
+[node name="M8" type="CSGPolygon3D" parent="MBLOCK" unique_id=1630561269]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-21.694548, -12.295055, -23.07483, -6.7683372, -15.157129, -5.6071167, -14.007201, -11.1423435)
+
+[node name="M9" type="CSGPolygon3D" parent="MBLOCK" unique_id=137162579]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-28.593418, -13.414724, -30.79567, -7.4096375, -23.519697, -5.46574, -21.706314, -12.297049)
+
+[node name="M10" type="CSGPolygon3D" parent="MBLOCK" unique_id=852464272]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-30.797668, -7.4019146, -32.996212, -1.6918144, -25.21685, -0.5357361, -23.533442, -5.432804)
+
+[node name="M11" type="CSGPolygon3D" parent="MBLOCK" unique_id=2124484591]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-32.99654, -1.6599579, -35.147076, 4.088585, -27.316113, 5.3445625, -25.242298, -0.48376083)
+
+[node name="M f toilet" type="CSGPolygon3D" parent="MBLOCK" unique_id=878286894]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-38.41256, 12.90237, -39.526806, 15.7492485, -31.551159, 17.930202, -30.584534, 15.231606)
+
+[node name="M13 (Drama)" type="CSGPolygon3D" parent="MBLOCK" unique_id=445654586]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-39.547855, 15.765942, -41.504894, 20.87642, -32.58544, 23.520405, -30.735003, 18.174416)
+
+[node name="M14 (Drama)" type="CSGPolygon3D" parent="MBLOCK" unique_id=1317445337]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-41.510597, 20.882687, -43.716763, 26.830788, -34.34898, 28.114243, -32.635773, 23.523727)
+
+[node name="Dance Studio" type="CSGPolygon3D" parent="MBLOCK" unique_id=778404723]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-43.762047, 26.847542, -45.82676, 31.896255, -22.041, 35.450813, -20.20771, 30.332245)
+
+[node name="Staffroom" type="CSGPolygon3D" parent="MBLOCK" unique_id=1909894532]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 18.463509, 0, 38.794136)
+polygon = PackedVector2Array(-11.708577, 7.762993, -14.433566, 15.724361, -5.606559, 17.976982, -2.7856665, 10.358299)
+
+[node name="M m toilet" type="CSGPolygon3D" parent="MBLOCK" unique_id=1989913022]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 41.979, 0, 42.439)
+polygon = PackedVector2Array(-37.957184, 12.137733, -39.264942, 15.245792, -29.91909, 16.588802, -29.126757, 14.360752)
+
+[node name="Music" type="CSGPolygon3D" parent="MBLOCK" unique_id=1080387017]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 41.979, 0, 42.439)
+polygon = PackedVector2Array(-39.268295, 15.303085, -40.947952, 19.810856, -30.326118, 22.059666, -28.444866, 16.726818)
+
+[node name="Practice Rooms" type="CSGPolygon3D" parent="MBLOCK" unique_id=484092551]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 41.979, 0, 42.439)
+polygon = PackedVector2Array(-40.94902, 19.915207, -47.90338, 37.953518, -39.4998, 39.18317, -31.34256, 21.963474)
+
+[node name="Black Box" type="CSGPolygon3D" parent="MBLOCK" unique_id=156152140]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 41.979, 0, 42.439)
+polygon = PackedVector2Array(-46.829937, 2.730568, -49.39312, 9.9846115, -38.084694, 12.371738, -35.627365, 5.224766)
+
+[node name="Black Box2" type="CSGPolygon3D" parent="MBLOCK" unique_id=374864234]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 41.979, 0, 42.439)
+polygon = PackedVector2Array(-25.398947, 13.09827, -27.586296, 19.277275, -20.721628, 20.06483, -18.615902, 14.441246)
