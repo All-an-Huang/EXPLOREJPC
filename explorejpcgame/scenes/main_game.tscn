@@ -254,6 +254,6 @@ polygon = PackedVector2Array(-40.94902, 19.915207, -47.90338, 37.953518, -39.499
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 41.979, 0, 42.439)
 polygon = PackedVector2Array(-46.829937, 2.730568, -49.39312, 9.9846115, -38.084694, 12.371738, -35.627365, 5.224766)
 
-[node name="Black Box2" type="CSGPolygon3D" parent="MBLOCK" unique_id=374864234]
+[node name="Chapel" type="CSGPolygon3D" parent="MBLOCK" unique_id=374864234]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 41.979, 0, 42.439)
 polygon = PackedVector2Array(-25.398947, 13.09827, -27.586296, 19.277275, -20.721628, 20.06483, -18.615902, 14.441246)
