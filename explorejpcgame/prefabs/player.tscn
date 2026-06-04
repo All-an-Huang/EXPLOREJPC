@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dck5u1ykk08vr"]
 
 [ext_resource type="Script" uid="uid://c2n3ewh8l0tnf" path="res://scripts/character.gd" id="1_72ieh"]
+[ext_resource type="PackedScene" uid="uid://46o86vlay8a4" path="res://scenes/pause_menu.tscn" id="2_4dohe"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ipu61"]
 
@@ -30,3 +31,5 @@ polygon = PackedVector2Array(0.06874806, 0.4577719, 0.42317525, 0.60059977, 0.41
 [node name="right ear" type="CSGPolygon3D" parent="head" unique_id=2029749089]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 0.13, 0.024894238, 0.14753664, 0)
 polygon = PackedVector2Array(0.06874806, 0.4577719, 0.4287783, 0.52839816, 0.26737154, 0.17500277)
+
+[node name="pause menu" parent="." unique_id=2102071224 instance=ExtResource("2_4dohe")]
