@@ -26,7 +26,6 @@ environment = SubResource("Environment_0rdsr")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1853658947]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
-visible = false
 shadow_enabled = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1181687798]
@@ -257,3 +256,21 @@ polygon = PackedVector2Array(-46.829937, 2.730568, -49.39312, 9.9846115, -38.084
 [node name="Chapel" type="CSGPolygon3D" parent="MBLOCK" unique_id=374864234]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 41.979, 0, 42.439)
 polygon = PackedVector2Array(-25.398947, 13.09827, -27.586296, 19.277275, -20.721628, 20.06483, -18.615902, 14.441246)
+
+[node name="RSC BLOCK" type="Node3D" parent="." unique_id=1442043162]
+
+[node name="RSC 1" type="CSGPolygon3D" parent="RSC BLOCK" unique_id=1570552587]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 9.7261505, 0, -65.75393)
+polygon = PackedVector2Array(-5.990865, 0.30641174, -6.4795074, 2.4773712, -5.5070596, 4.6441727, -2.201191, 5.006321, -0.6201153, -0.85585785, -3.8825111, -1.3450546)
+
+[node name="RSC 2" type="CSGPolygon3D" parent="RSC BLOCK" unique_id=1148940516]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 9.7261505, 0, -65.75393)
+polygon = PackedVector2Array(3.1417751, -0.24345398, -0.5625744, -0.8149185, -2.124875, 4.9693947, 1.184823, 5.7630997, 1.5957718, 4.2569046, 3.748868, 4.4673347, 5.0016603, 1.1707077, 2.581418, 0.89676666)
+
+[node name="ADMIN BLOCK" type="Node3D" parent="." unique_id=316897355]
+
+[node name="D BLOCK" type="Node3D" parent="." unique_id=157620808]
+
+[node name="N BLOCK" type="Node3D" parent="." unique_id=513462336]
+
+[node name="L BLOCK" type="Node3D" parent="." unique_id=910150954]
