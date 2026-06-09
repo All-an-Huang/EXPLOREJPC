@@ -16,6 +16,9 @@ sky = SubResource("Sky_d2op2")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_72e8q"]
+albedo_color = Color(0.29381996, 0.83, 0.1992, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2op2"]
 albedo_texture = ExtResource("1_72e8q")
 
@@ -29,6 +32,12 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1181687798]
+material_override = SubResource("StandardMaterial3D_72e8q")
+use_collision = true
+size = Vector3(200, 0.1, 200)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1414954596]
+visible = false
 material_override = SubResource("StandardMaterial3D_d2op2")
 use_collision = true
 size = Vector3(200, 0.1, 200)
@@ -171,7 +180,7 @@ polygon = PackedVector2Array(-1.1558242, 0.24962401, -0.9462228, 0.61536956, 0.5
 [node name="GYM" type="CSGPolygon3D" parent="E BLOCK + GYM" unique_id=576031850]
 transform = Transform3D(-0.8179843, 3.9154696, -1.7115062e-07, 0, -1.7484555e-07, -4, -3.9154696, -0.8179843, 3.5755228e-08, 25.99, 0, -25.701)
 use_collision = true
-polygon = PackedVector2Array(-1.6468923, -1.7206855, -1.6561623, 2.88863, 1.7682934, 2.2067413, 1.3171787, -2.0641031, 0.9733257, -2.0083385, 0.9957695, -2.6618905, -0.03667164, -2.430614, -0.042140007, -2.6361399, -0.58525515, -2.546362, -0.5893631, -2.3021722, -1.4177334, -2.1535044)
+polygon = PackedVector2Array(-1.6468923, -1.7206855, -1.6561623, 2.88863, 1.7682934, 2.2067413, 1.3265014, -2.0780892, 0.9733257, -2.0083385, 0.9957695, -2.6618905, -0.03667164, -2.430614, -0.042140007, -2.6361399, -0.58525515, -2.546362, -0.5893631, -2.3021722, -1.4177334, -2.1535044)
 
 [node name="E1" type="CSGPolygon3D" parent="E BLOCK + GYM" unique_id=1860922291]
 transform = Transform3D(-1.6077912, 3.6626503, -1.6009953e-07, 0, -1.7484555e-07, -4, -3.6626503, -1.6077912, 7.027879e-08, 21.513357, 4, -27.188583)
@@ -268,6 +277,22 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 9.7
 polygon = PackedVector2Array(3.1417751, -0.24345398, -0.5625744, -0.8149185, -2.124875, 4.9693947, 1.184823, 5.7630997, 1.5957718, 4.2569046, 3.748868, 4.4673347, 5.0016603, 1.1707077, 2.581418, 0.89676666)
 
 [node name="ADMIN BLOCK" type="Node3D" parent="." unique_id=316897355]
+
+[node name="Careers" type="CSGPolygon3D" parent="ADMIN BLOCK" unique_id=179779215]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 15.03257, 0, -52.19437)
+polygon = PackedVector2Array(-0.1271677, -1.2826385, 1.4246597, 2.3372688, 10.37672, 0.44375992, 8.776957, -3.1409912)
+
+[node name="DblockOffices" type="CSGPolygon3D" parent="ADMIN BLOCK" unique_id=1000955622]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -8, 0, 1, -3.496911e-07, 15.03257, 0, -52.19437)
+polygon = PackedVector2Array(-4.3636513, 16.855137, -1.5545073, 23.978655, 12.076897, 19.697502, 10.170269, 14.369637)
+
+[node name="FrontReception_StudentCounter" type="CSGPolygon3D" parent="ADMIN BLOCK" unique_id=568708822]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 15.03257, 0, -52.19437)
+polygon = PackedVector2Array(-17.363728, -2.599907, -17.82871, -3.8571205, -23.421932, -2.7561455, -22.14915, 0.17657089, -23.09718, 0.39269638, -22.063442, 2.8628464, -21.019697, 2.7015991, -19.498178, 6.4517403, -14.298158, 4.981659, -14.943609, 3.3550415, -10.082164, 2.3489113, -7.6941433, 7.7746735, -2.0965824, 6.9839516, -4.2957077, 1.4837952, -5.8067684, -2.681816, -4.255372, -7.7457733, -10.619044, -8.941509, -12.397799, -3.4565964)
+
+[node name="UpstairsStaff" type="CSGPolygon3D" parent="ADMIN BLOCK" unique_id=631388639]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -4, 0, 1, -1.7484555e-07, 15.033, 4, -52.194)
+polygon = PackedVector2Array(-19.777348, -2.054165, -17.45332, 3.6465034, -10.082164, 2.3489113, -7.6941433, 7.7746735, -2.0965824, 6.9839516, -6.3587084, -4.9539757, -12.397799, -3.4565964)
 
 [node name="IT BLOCK" type="Node3D" parent="." unique_id=1290501307]
 
