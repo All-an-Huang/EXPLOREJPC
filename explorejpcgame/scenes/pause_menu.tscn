@@ -13,39 +13,54 @@ grow_vertical = 2
 script = ExtResource("1_myx47")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1713221920]
-visible = false
 layout_mode = 0
 offset_right = 1149.0
 offset_bottom = 646.0
 texture = ExtResource("1_n87rw")
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2033765366]
+[node name="TextEdit" type="TextEdit" parent="." unique_id=953002418]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 419.0
+offset_top = 81.0
+offset_right = 706.0
+offset_bottom = 158.0
+text = "Paused"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=206598118]
-layout_mode = 2
-
-[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer" unique_id=241316597]
-layout_mode = 2
+[node name="Resume" type="Button" parent="." unique_id=241316597]
+layout_mode = 0
+offset_left = 421.0
+offset_top = 184.0
+offset_right = 703.0
+offset_bottom = 247.0
 text = "Resume"
 
-[node name="Options" type="Button" parent="MarginContainer/VBoxContainer" unique_id=375865289]
-layout_mode = 2
+[node name="Options" type="Button" parent="." unique_id=375865289]
+layout_mode = 0
+offset_left = 423.0
+offset_top = 258.0
+offset_right = 704.0
+offset_bottom = 316.0
 text = "Options"
 
-[node name="Menu" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1791710639]
-layout_mode = 2
+[node name="Menu" type="Button" parent="." unique_id=1791710639]
+layout_mode = 0
+offset_left = 419.0
+offset_top = 330.0
+offset_right = 703.0
+offset_bottom = 388.0
 text = "Menu
 "
 
-[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1653282379]
-layout_mode = 2
+[node name="Quit" type="Button" parent="." unique_id=1653282379]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 403.0
+offset_right = 705.0
+offset_bottom = 460.0
 text = "Quit
 "
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Menu" to="." method="_on_menu_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
