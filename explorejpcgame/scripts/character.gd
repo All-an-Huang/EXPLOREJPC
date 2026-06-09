@@ -1,5 +1,4 @@
 extends CharacterBody3D
-
 var speed
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0
@@ -14,15 +13,12 @@ var t_bob = 0.0
 #fov variables
 const BASE_FOV = 75.0
 const FOV_CHANGE = 1.5
-
 @onready var head = $head
 @onready var camera = $head/Camera3D
-
 @onready var pause_menu = $"pause menu"
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
@@ -33,22 +29,19 @@ func _unhandled_input(event: InputEvent) -> void:
 		if event.keycode == KEY_ESCAPE:
 			pause_menu.pausemenu()
 
-
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-	
+
 	#handle sprint
 	if Input.is_action_pressed("sprint"):
 		speed = SPRINT_SPEED
 	else:
 		speed = WALK_SPEED
-
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("left", "right", "forward", "backwards")
@@ -63,19 +56,17 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 3.0)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 3.0)
-	
-	
+
 	#head bob
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera.transform.origin = _headbob(t_bob)
-	
+
 	#fov
 	var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
-	
-	move_and_slide()
 
+	move_and_slide()
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * BOB_FREQ) *  BOB_AMP
