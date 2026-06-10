@@ -2,6 +2,8 @@ extends Control
 
 var paused = false
 
+@onready var quit_menu = $"quit confirmation"
+
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 	hide()
@@ -18,8 +20,9 @@ func _on_menu_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 
 func _on_quit_pressed() -> void:
-	get_tree().quit()
+	quit_menu.quitmenu()
 
+#Pause vs unpause
 func pausemenu():
 	paused = !paused
 	if paused:

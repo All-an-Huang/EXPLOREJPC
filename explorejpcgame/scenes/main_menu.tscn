@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bc81oe6mb51md" path="res://scripts/main_menu.gd" id="1_l6cm7"]
 [ext_resource type="Texture2D" uid="uid://c017jsqwoey5j" path="res://main_menu.png" id="2_ekxnf"]
+[ext_resource type="PackedScene" uid="uid://cvxofxs5lvt6g" path="res://scenes/quit_confirmation.tscn" id="3_bqqt6"]
 
 [node name="main menu" type="Control" unique_id=729690293]
 layout_mode = 3
@@ -88,6 +89,9 @@ custom_minimum_size = Vector2(475, 175)
 layout_mode = 2
 text = "EXPLORE JPC"
 editable = false
+
+[node name="quit confirmation" parent="." unique_id=50851270 instance=ExtResource("3_bqqt6")]
+layout_mode = 1
 
 [connection signal="pressed" from="margin container/button h box/button v box/start button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="margin container/button h box/button v box/options button" to="." method="_on_options_button_pressed"]

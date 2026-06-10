@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cvxofxs5lvt6g"]
+
+[ext_resource type="Script" uid="uid://letrfuqar0yb" path="res://scripts/quit_confirmation.gd" id="1_em3st"]
+[ext_resource type="Texture2D" uid="uid://bvdom64djtjup" path="res://quit_confirmation.png" id="2_u8427"]
+
+[node name="quit confirmation" type="Control" unique_id=50851270]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_em3st")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1990380752]
+visible = false
+layout_mode = 0
+offset_right = 1147.0
+offset_bottom = 645.0
+texture = ExtResource("2_u8427")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1875843078]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 126.0
+offset_right = 957.0
+offset_bottom = 523.0
+color = Color(0, 0, 0, 1)
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1704448438]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 124.0
+offset_right = 952.0
+offset_bottom = 305.0
+theme_override_font_sizes/font_size = 100
+text = "Quit Game
+"
+editable = false
+
+[node name="TextEdit2" type="TextEdit" parent="." unique_id=842973793]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 306.0
+offset_right = 952.0
+offset_bottom = 366.0
+theme_override_font_sizes/font_size = 30
+text = "Are you sure you want to quit the game?"
+editable = false
+
+[node name="Yes" type="Button" parent="." unique_id=24507386]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 390.0
+offset_right = 519.0
+offset_bottom = 475.0
+text = "Yes"
+
+[node name="No" type="Button" parent="." unique_id=898339710]
+layout_mode = 0
+offset_left = 621.0
+offset_top = 392.0
+offset_right = 877.0
+offset_bottom = 477.0
+text = "No"
+
+[connection signal="pressed" from="Yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="No" to="." method="_on_no_pressed"]
