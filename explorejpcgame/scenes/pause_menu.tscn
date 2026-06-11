@@ -27,6 +27,7 @@ offset_top = 81.0
 offset_right = 706.0
 offset_bottom = 158.0
 text = "Paused"
+editable = false
 
 [node name="Resume" type="Button" parent="." unique_id=241316597]
 layout_mode = 0
@@ -63,6 +64,7 @@ text = "Quit
 "
 
 [node name="quit confirmation" parent="." unique_id=50851270 instance=ExtResource("3_kukqi")]
+visible = false
 layout_mode = 1
 
 [connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]

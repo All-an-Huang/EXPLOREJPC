@@ -91,6 +91,7 @@ text = "EXPLORE JPC"
 editable = false
 
 [node name="quit confirmation" parent="." unique_id=50851270 instance=ExtResource("3_bqqt6")]
+visible = false
 layout_mode = 1
 
 [connection signal="pressed" from="margin container/button h box/button v box/start button" to="." method="_on_start_button_pressed"]

@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://cprxfcy51yi71" path="res://school_map.jpeg" id="1_72e8q"]
 [ext_resource type="PackedScene" uid="uid://dck5u1ykk08vr" path="res://prefabs/player.tscn" id="2_72e8q"]
-[ext_resource type="Script" uid="uid://skk5qdfhw8xo" path="res://scripts/minimap_cam.gd" id="3_d2op2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_72e8q"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -446,8 +445,7 @@ polygon = PackedVector2Array(-1.5687141, -1.536171, -1.9591522, 2.586525, 5.2450
 [node name="MinimapViewport" type="SubViewport" parent="." unique_id=228081809]
 size = Vector2i(150, 150)
 
-[node name="MinimapCam" type="Camera3D" parent="MinimapViewport" unique_id=283539039]
+[node name="Camera3D" type="Camera3D" parent="MinimapViewport" unique_id=283539039]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 97.538, 50, -47.3)
 projection = 1
-size = 30.0
-script = ExtResource("3_d2op2")
+size = 9.411
