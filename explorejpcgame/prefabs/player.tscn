@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://dcig7x55lkm60" path="res://scripts/player_gui.gd" id="3_r66lb"]
 [ext_resource type="PackedScene" uid="uid://bviciish4j65h" path="res://prefabs/icon_component.tscn" id="4_1txc5"]
 [ext_resource type="Texture2D" uid="uid://cm7vhdyiblshy" path="res://icon.svg" id="5_ht1c8"]
+[ext_resource type="Texture2D" uid="uid://ddjb0wyhrbif3" path="res://assets/minimapcircle.svg" id="6_g2jcq"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ipu61"]
 
@@ -45,7 +46,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("3_r66lb")
-minimap_rect = NodePath("MarginContainer/MinimapRect")
+minimap_rect = NodePath("MarginContainer/CircleClip/MinimapRect")
 
 [node name="MarginContainer" type="MarginContainer" parent="PlayerGui" unique_id=1780032118]
 layout_mode = 1
@@ -59,9 +60,20 @@ theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 
-[node name="MinimapRect" type="TextureRect" parent="PlayerGui/MarginContainer" unique_id=896377952]
+[node name="CircleClip" type="TextureRect" parent="PlayerGui/MarginContainer" unique_id=334857250]
+clip_children = 2
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource("6_g2jcq")
+expand_mode = 1
+
+[node name="MinimapRect" type="TextureRect" parent="PlayerGui/MarginContainer/CircleClip" unique_id=896377952]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 150.0
 size_flags_horizontal = 8
 size_flags_vertical = 0
 texture = SubResource("PlaceholderTexture2D_1txc5")
