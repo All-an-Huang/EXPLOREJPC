@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b0uuf3xlrljwl" path="res://scripts/pause_menu.gd" id="1_myx47"]
 [ext_resource type="Texture2D" uid="uid://dnyhax6de7dch" path="res://pause_menu.png" id="1_n87rw"]
 [ext_resource type="PackedScene" uid="uid://cvxofxs5lvt6g" path="res://scenes/quit_confirmation.tscn" id="3_kukqi"]
+[ext_resource type="PackedScene" uid="uid://c4f7e0cw7u12o" path="res://scenes/options_menu.tscn" id="4_5d2l8"]
 
 [node name="pause menu" type="Control" unique_id=2102071224]
 layout_mode = 3
@@ -65,6 +66,9 @@ text = "Quit
 
 [node name="quit confirmation" parent="." unique_id=50851270 instance=ExtResource("3_kukqi")]
 visible = false
+layout_mode = 1
+
+[node name="options menu" parent="." unique_id=729690293 instance=ExtResource("4_5d2l8")]
 layout_mode = 1
 
 [connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]

@@ -12,7 +12,6 @@ func _on_yes_pressed() -> void:
 func _on_no_pressed() -> void:
 	quitmenu()
 
-
 func quitmenu():
 	paused = !paused
 	if paused:

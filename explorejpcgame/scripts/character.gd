@@ -1,6 +1,6 @@
 extends CharacterBody3D
-class_name Player
 
+class_name Player
 var speed
 
 const WALK_SPEED = 5.0
@@ -16,7 +16,6 @@ var t_bob = 0.0
 #fov variables
 const BASE_FOV = 75.0
 const FOV_CHANGE = 1.5
-
 @onready var head = $head
 @onready var camera = $head/Camera3D
 @onready var pause_menu = $"pause menu"
@@ -24,16 +23,16 @@ const FOV_CHANGE = 1.5
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("pause"):
+		pause_menu.pausemenu()
+		
+
 func _unhandled_input(event: InputEvent) -> void:
-	#Moving Camera
 	if event is InputEventMouseMotion:
 		head.rotate_y(-event.relative.x * SENSITIVITY)
 		camera.rotate_x(-event.relative.y * SENSITIVITY)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
-	#Checking for pause
-	elif event is InputEventKey and event.pressed and not event.echo:
-		if event.keycode == KEY_ESCAPE:
-			pause_menu.pausemenu()
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -49,13 +48,13 @@ func _physics_process(delta: float) -> void:
 	else:
 		speed = WALK_SPEED
 	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("left", "right", "forward", "backwards")
 	var direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if is_on_floor():
 		if direction:
 			velocity.x = direction.x * speed
 			velocity.z = direction.z * speed
-	#Inertia
 		else:
 			velocity.x = lerp(velocity.x, direction.x * speed, delta * 7.0)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 7.0)
@@ -73,7 +72,7 @@ func _physics_process(delta: float) -> void:
 	camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
 
 	move_and_slide()
-	
+
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * BOB_FREQ) *  BOB_AMP

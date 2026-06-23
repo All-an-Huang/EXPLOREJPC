@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://c3tsn13soey4p" path="res://scripts/options_menu.gd" id="1_ijpji"]
 [ext_resource type="Texture2D" uid="uid://vjhwco8mk26v" path="res://option_menu.png" id="1_liyum"]
-[ext_resource type="ButtonGroup" uid="uid://bjkenyda1vhew" path="res://buttongroups/languagecheck.tres" id="3_hm4m4"]
-[ext_resource type="ButtonGroup" uid="uid://bnjoxjwkubs5x" path="res://buttongroups/optioncheck.tres" id="4_lfjc7"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ijpji"]
 
 [node name="options menu" type="Control" unique_id=729690293]
 layout_mode = 3
@@ -24,223 +24,139 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_liyum")
 
-[node name="margin container" type="MarginContainer" parent="." unique_id=2094967003]
+[node name="template2" type="TextureRect" parent="." unique_id=734752093]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 40
-theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 40
-theme_override_constants/margin_bottom = 40
+texture = SubResource("CanvasTexture_ijpji")
 
-[node name="side panel h box" type="HBoxContainer" parent="margin container" unique_id=17620607]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_constants/separation = 4
+[node name="Panel" type="Panel" parent="." unique_id=1665014086]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="side panel v box" type="VBoxContainer" parent="margin container/side panel h box" unique_id=464537386]
-layout_mode = 2
-size_flags_vertical = 4
-theme_override_constants/separation = 15
-
-[node name="title" type="TextEdit" parent="margin container/side panel h box/side panel v box" unique_id=1445103756]
-custom_minimum_size = Vector2(340, 90)
-layout_mode = 2
-text = "OPTIONS"
+[node name="Options" type="TextEdit" parent="Panel" unique_id=1838231345]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 47.0
+offset_right = 381.0
+offset_bottom = 124.0
+text = "Options"
 editable = false
 
-[node name="sound button" type="Button" parent="margin container/side panel h box/side panel v box" unique_id=1075073628]
-custom_minimum_size = Vector2(340, 65)
-layout_mode = 2
-text = "Sound"
-
-[node name="display button" type="Button" parent="margin container/side panel h box/side panel v box" unique_id=1514096555]
-custom_minimum_size = Vector2(340, 60)
-layout_mode = 2
-text = "Display
-"
-
-[node name="language panel" type="Panel" parent="margin container/side panel h box/side panel v box" unique_id=1261097355]
-custom_minimum_size = Vector2(340, 175)
-layout_mode = 2
-
-[node name="language" type="TextEdit" parent="margin container/side panel h box/side panel v box/language panel" unique_id=802932481]
-custom_minimum_size = Vector2(0, 60)
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 8.0
-grow_horizontal = 2
+[node name="Language" type="TextEdit" parent="Panel" unique_id=145099027]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 305.0
+offset_right = 379.0
+offset_bottom = 366.0
 text = "Language"
-
-[node name="checkbox h box" type="HBoxContainer" parent="margin container/side panel h box/side panel v box/language panel" unique_id=1196138748]
-custom_minimum_size = Vector2(0, 115)
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -115.0
-offset_right = 24.0
-grow_vertical = 0
-
-[node name="checkbox v box" type="VBoxContainer" parent="margin container/side panel h box/side panel v box/language panel/checkbox h box" unique_id=340219644]
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_constants/separation = 10
-
-[node name="english" type="CheckBox" parent="margin container/side panel h box/side panel v box/language panel/checkbox h box/checkbox v box" unique_id=1728274930]
-layout_mode = 2
-button_group = ExtResource("3_hm4m4")
-
-[node name="japanese" type="CheckBox" parent="margin container/side panel h box/side panel v box/language panel/checkbox h box/checkbox v box" unique_id=2076793069]
-layout_mode = 2
-button_group = ExtResource("3_hm4m4")
-
-[node name="etc" type="CheckBox" parent="margin container/side panel h box/side panel v box/language panel/checkbox h box/checkbox v box" unique_id=1420210339]
-layout_mode = 2
-button_group = ExtResource("3_hm4m4")
-
-[node name="language h box2" type="HBoxContainer" parent="margin container/side panel h box/side panel v box/language panel" unique_id=969143082]
-custom_minimum_size = Vector2(0, 115)
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -12.0
-offset_top = -115.0
-offset_right = 12.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="language panel v box" type="VBoxContainer" parent="margin container/side panel h box/side panel v box/language panel/language h box2" unique_id=1287616162]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="TextEdit" type="TextEdit" parent="margin container/side panel h box/side panel v box/language panel/language h box2/language panel v box" unique_id=1163680497]
-custom_minimum_size = Vector2(100, 30)
-layout_mode = 2
-text = "English"
 editable = false
 
-[node name="TextEdit2" type="TextEdit" parent="margin container/side panel h box/side panel v box/language panel/language h box2/language panel v box" unique_id=1508792645]
-custom_minimum_size = Vector2(100, 30)
-layout_mode = 2
-text = "Japanese"
-editable = false
-
-[node name="TextEdit3" type="TextEdit" parent="margin container/side panel h box/side panel v box/language panel/language h box2/language panel v box" unique_id=335035422]
-custom_minimum_size = Vector2(100, 30)
-layout_mode = 2
-text = "ETC."
-editable = false
-
-[node name="resume h box" type="HBoxContainer" parent="margin container" unique_id=1470216246]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 8
-theme_override_constants/separation = 4
-
-[node name="resume v box" type="VBoxContainer" parent="margin container/resume h box" unique_id=1143950457]
-layout_mode = 2
-size_flags_vertical = 4
-theme_override_constants/separation = 15
-
-[node name="resume button" type="Button" parent="margin container/resume h box/resume v box" unique_id=1702724123]
-custom_minimum_size = Vector2(340, 65)
-layout_mode = 2
-text = "Resume"
-
-[node name="panel h box" type="HBoxContainer" parent="margin container" unique_id=801723044]
-layout_mode = 2
-size_flags_horizontal = 8
-
-[node name="panel" type="Panel" parent="margin container/panel h box" unique_id=1720298402]
-custom_minimum_size = Vector2(700, 0)
-layout_mode = 2
-size_flags_horizontal = 4
-
-[node name="title" type="TextEdit" parent="margin container/panel h box/panel" unique_id=572620595]
-custom_minimum_size = Vector2(0, 90)
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 8.0
-grow_horizontal = 2
+[node name="Sound" type="Button" parent="Panel" unique_id=2127143933]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 147.0
+offset_right = 381.0
+offset_bottom = 207.0
 text = "Sound"
+
+[node name="Display" type="Button" parent="Panel" unique_id=101972681]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 225.0
+offset_right = 384.0
+offset_bottom = 285.0
+text = "Display"
+
+[node name="Resume" type="Button" parent="Panel" unique_id=7954173]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 535.0
+offset_right = 383.0
+offset_bottom = 595.0
+text = "Main Menu"
+
+[node name="LANGUAGES" type="TextEdit" parent="Panel" unique_id=1948553100]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 366.0
+offset_right = 382.0
+offset_bottom = 467.0
+text = "English
+Japanese
+ETC."
 editable = false
 
-[node name="options panel" type="Panel" parent="margin container/panel h box/panel" unique_id=1815235834]
-custom_minimum_size = Vector2(0, 480)
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 0
+[node name="English" type="CheckBox" parent="Panel" unique_id=1617780563]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 377.0
+offset_right = 84.0
+offset_bottom = 401.0
 
-[node name="text v box" type="HBoxContainer" parent="margin container/panel h box/panel/options panel" unique_id=1516027715]
-custom_minimum_size = Vector2(0, 115)
-layout_mode = 1
-offset_right = 100.0
-offset_bottom = 115.0
+[node name="Japanese" type="CheckBox" parent="Panel" unique_id=60676278]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 407.0
+offset_right = 84.0
+offset_bottom = 431.0
 
-[node name="text h box" type="VBoxContainer" parent="margin container/panel h box/panel/options panel/text v box" unique_id=1757441247]
-layout_mode = 2
-theme_override_constants/separation = 30
+[node name="ETC" type="CheckBox" parent="Panel" unique_id=967894989]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 437.0
+offset_right = 81.0
+offset_bottom = 461.0
 
-[node name="option 1" type="TextEdit" parent="margin container/panel h box/panel/options panel/text v box/text h box" unique_id=1554125917]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-text = "Option 1"
+[node name="Option 1" type="CheckBox" parent="Panel" unique_id=75548581]
+layout_mode = 0
+offset_left = 947.0
+offset_top = 164.0
+offset_right = 971.0
+offset_bottom = 188.0
+
+[node name="Option 2" type="CheckBox" parent="Panel" unique_id=2110653746]
+layout_mode = 0
+offset_left = 1027.0
+offset_top = 166.0
+offset_right = 1051.0
+offset_bottom = 190.0
+
+[node name="HSlider" type="HSlider" parent="Panel" unique_id=1928712823]
+layout_mode = 0
+offset_left = 772.0
+offset_top = 215.0
+offset_right = 1078.0
+offset_bottom = 231.0
+
+[node name="OPTIONS" type="TextEdit" parent="Panel" unique_id=746423364]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 142.0
+offset_right = 732.0
+offset_bottom = 263.0
+text = "Option 1
+
+Option 2"
 editable = false
 
-[node name="option 2" type="TextEdit" parent="margin container/panel h box/panel/options panel/text v box/text h box" unique_id=286848275]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-text = "Option 2"
+[node name="Heading" type="TextEdit" parent="Panel" unique_id=618224811]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 45.0
+offset_right = 1110.0
+offset_bottom = 124.0
+text = "Sound
+"
 editable = false
 
-[node name="choice v box" type="HBoxContainer" parent="margin container/panel h box/panel/options panel" unique_id=1254904828]
-custom_minimum_size = Vector2(0, 115)
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -100.0
-offset_bottom = 115.0
-grow_horizontal = 0
-
-[node name="choice h box" type="VBoxContainer" parent="margin container/panel h box/panel/options panel/choice v box" unique_id=1966298555]
-layout_mode = 2
-theme_override_constants/separation = 30
-
-[node name="checkbox h box" type="HBoxContainer" parent="margin container/panel h box/panel/options panel/choice v box/choice h box" unique_id=1767435429]
-layout_mode = 2
-
-[node name="option 1" type="CheckBox" parent="margin container/panel h box/panel/options panel/choice v box/choice h box/checkbox h box" unique_id=1935967723]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-button_group = ExtResource("4_lfjc7")
-
-[node name="option 2" type="CheckBox" parent="margin container/panel h box/panel/options panel/choice v box/choice h box/checkbox h box" unique_id=1792625103]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-button_group = ExtResource("4_lfjc7")
-
-[node name="HSlider" type="HSlider" parent="margin container/panel h box/panel/options panel/choice v box/choice h box" unique_id=722510308]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-
-[connection signal="pressed" from="margin container/side panel h box/side panel v box/sound button" to="." method="_on_sound_button_pressed"]
-[connection signal="pressed" from="margin container/side panel h box/side panel v box/display button" to="." method="_on_display_button_pressed"]
-[connection signal="pressed" from="margin container/resume h box/resume v box/resume button" to="." method="_on_resume_button_pressed"]
-[connection signal="toggled" from="margin container/panel h box/panel/options panel/choice v box/choice h box/checkbox h box/option 1" to="." method="_on_option_1_toggled"]
-[connection signal="toggled" from="margin container/panel h box/panel/options panel/choice v box/choice h box/checkbox h box/option 2" to="." method="_on_option_2_toggled"]
+[connection signal="pressed" from="Panel/Sound" to="." method="_on_sound_pressed"]
+[connection signal="pressed" from="Panel/Display" to="." method="_on_display_pressed"]
+[connection signal="pressed" from="Panel/Resume" to="." method="_on_resume_pressed"]

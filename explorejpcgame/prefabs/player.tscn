@@ -35,8 +35,6 @@ cull_mask = 524287
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
 map_icon = ExtResource("5_ht1c8")
 
-[node name="pause menu" parent="." unique_id=2102071224 instance=ExtResource("2_4dohe")]
-
 [node name="PlayerGui" type="Control" parent="." unique_id=1687169458 node_paths=PackedStringArray("minimap_rect")]
 layout_mode = 3
 anchors_preset = 15
@@ -77,3 +75,5 @@ offset_bottom = 150.0
 size_flags_horizontal = 8
 size_flags_vertical = 0
 texture = SubResource("PlaceholderTexture2D_1txc5")
+
+[node name="pause menu" parent="." unique_id=2102071224 instance=ExtResource("2_4dohe")]

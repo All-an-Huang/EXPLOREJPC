@@ -3,26 +3,28 @@ extends Control
 var paused = false
 
 @onready var quit_menu = $"quit confirmation"
+@onready var options_menu = $"options menu"
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
+	options_menu.hide()
 	hide()
 
 func _on_resume_pressed() -> void:
 	pausemenu()
 
 func _on_options_pressed() -> void:
-	get_tree().paused = false
-	get_tree().change_scene_to_file("res://scenes/options_menu.tscn")
+	options_menu.change_button()
+	options_menu.show()
 
 func _on_menu_pressed() -> void:
 	get_tree().paused = false
+	options_menu.change_button()
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 
 func _on_quit_pressed() -> void:
 	quit_menu.quitmenu()
 
-#Pause vs unpause
 func pausemenu():
 	paused = !paused
 	if paused:
