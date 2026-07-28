@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://ftw6mdeouqm"]
+
+[ext_resource type="Script" uid="uid://bc81oe6mb51md" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://c017jsqwoey5j" path="res://main_menu.png" id="2_ekxnf"]
+[ext_resource type="PackedScene" uid="uid://cvxofxs5lvt6g" path="res://scenes/quit_confirmation.tscn" id="3_bqqt6"]
+
+[node name="main menu" type="Control" unique_id=729690293]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l6cm7")
+
+[node name="template" type="TextureRect" parent="." unique_id=1008210019]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ekxnf")
+
+[node name="margin container" type="MarginContainer" parent="." unique_id=2094967003]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 110
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 110
+theme_override_constants/margin_bottom = 20
+
+[node name="button h box" type="HBoxContainer" parent="margin container" unique_id=358674126]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+
+[node name="button v box" type="VBoxContainer" parent="margin container/button h box" unique_id=1434541406]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="seperator3" type="Control" parent="margin container/button h box/button v box" unique_id=2119927064]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="start button" type="Button" parent="margin container/button h box/button v box" unique_id=912757199]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+text = "start"
+
+[node name="seperator" type="Control" parent="margin container/button h box/button v box" unique_id=805462207]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="options button" type="Button" parent="margin container/button h box/button v box" unique_id=121127855]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+text = "options"
+
+[node name="seperator2" type="Control" parent="margin container/button h box/button v box" unique_id=16531596]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="quit button" type="Button" parent="margin container/button h box/button v box" unique_id=340968147]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+text = "quit"
+
+[node name="title h box" type="HBoxContainer" parent="margin container" unique_id=17620607]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="title v box" type="VBoxContainer" parent="margin container/title h box" unique_id=464537386]
+layout_mode = 2
+
+[node name="seperator" type="Control" parent="margin container/title h box/title v box" unique_id=163528787]
+custom_minimum_size = Vector2(0, 27.145)
+layout_mode = 2
+
+[node name="title" type="TextEdit" parent="margin container/title h box/title v box" unique_id=1783433125]
+custom_minimum_size = Vector2(475, 175)
+layout_mode = 2
+text = "EXPLORE JPC"
+editable = false
+
+[node name="quit confirmation" parent="." unique_id=50851270 instance=ExtResource("3_bqqt6")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="margin container/button h box/button v box/start button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="margin container/button h box/button v box/options button" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="margin container/button h box/button v box/quit button" to="." method="_on_quit_button_pressed"]

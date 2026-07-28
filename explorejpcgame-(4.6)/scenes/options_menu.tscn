@@ -1,0 +1,162 @@
+[gd_scene format=3 uid="uid://c4f7e0cw7u12o"]
+
+[ext_resource type="Script" uid="uid://c3tsn13soey4p" path="res://scripts/options_menu.gd" id="1_ijpji"]
+[ext_resource type="Texture2D" uid="uid://vjhwco8mk26v" path="res://option_menu.png" id="1_liyum"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ijpji"]
+
+[node name="options menu" type="Control" unique_id=729690293]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ijpji")
+
+[node name="template" type="TextureRect" parent="." unique_id=1008210019]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_liyum")
+
+[node name="template2" type="TextureRect" parent="." unique_id=734752093]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_ijpji")
+
+[node name="Panel" type="Panel" parent="." unique_id=1665014086]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Options" type="TextEdit" parent="Panel" unique_id=1838231345]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 47.0
+offset_right = 381.0
+offset_bottom = 124.0
+text = "Options"
+editable = false
+
+[node name="Language" type="TextEdit" parent="Panel" unique_id=145099027]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 305.0
+offset_right = 379.0
+offset_bottom = 366.0
+text = "Language"
+editable = false
+
+[node name="Sound" type="Button" parent="Panel" unique_id=2127143933]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 147.0
+offset_right = 381.0
+offset_bottom = 207.0
+text = "Sound"
+
+[node name="Display" type="Button" parent="Panel" unique_id=101972681]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 225.0
+offset_right = 384.0
+offset_bottom = 285.0
+text = "Display"
+
+[node name="Resume" type="Button" parent="Panel" unique_id=7954173]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 535.0
+offset_right = 383.0
+offset_bottom = 595.0
+text = "Main Menu"
+
+[node name="LANGUAGES" type="TextEdit" parent="Panel" unique_id=1948553100]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 366.0
+offset_right = 382.0
+offset_bottom = 467.0
+text = "English
+Japanese
+ETC."
+editable = false
+
+[node name="English" type="CheckBox" parent="Panel" unique_id=1617780563]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 377.0
+offset_right = 84.0
+offset_bottom = 401.0
+
+[node name="Japanese" type="CheckBox" parent="Panel" unique_id=60676278]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 407.0
+offset_right = 84.0
+offset_bottom = 431.0
+
+[node name="ETC" type="CheckBox" parent="Panel" unique_id=967894989]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 437.0
+offset_right = 81.0
+offset_bottom = 461.0
+
+[node name="Option 1" type="CheckBox" parent="Panel" unique_id=75548581]
+layout_mode = 0
+offset_left = 947.0
+offset_top = 164.0
+offset_right = 971.0
+offset_bottom = 188.0
+
+[node name="Option 2" type="CheckBox" parent="Panel" unique_id=2110653746]
+layout_mode = 0
+offset_left = 1027.0
+offset_top = 166.0
+offset_right = 1051.0
+offset_bottom = 190.0
+
+[node name="HSlider" type="HSlider" parent="Panel" unique_id=1928712823]
+layout_mode = 0
+offset_left = 772.0
+offset_top = 215.0
+offset_right = 1078.0
+offset_bottom = 231.0
+
+[node name="OPTIONS" type="TextEdit" parent="Panel" unique_id=746423364]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 142.0
+offset_right = 732.0
+offset_bottom = 263.0
+text = "Option 1
+
+Option 2"
+editable = false
+
+[node name="Heading" type="TextEdit" parent="Panel" unique_id=618224811]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 45.0
+offset_right = 1110.0
+offset_bottom = 124.0
+text = "Sound
+"
+editable = false
+
+[connection signal="pressed" from="Panel/Sound" to="." method="_on_sound_pressed"]
+[connection signal="pressed" from="Panel/Display" to="." method="_on_display_pressed"]
+[connection signal="pressed" from="Panel/Resume" to="." method="_on_resume_pressed"]

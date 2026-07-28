@@ -85,7 +85,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Panel" type="Panel" parent="PlayerGui/MarginContainer/HBoxContainer/VBoxContainer" unique_id=20966801]
-custom_minimum_size = Vector2(150, 200)
+custom_minimum_size = Vector2(150, 250)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
@@ -93,7 +93,7 @@ size_flags_vertical = 4
 [node name="RichTextLabel" type="RichTextLabel" parent="PlayerGui/MarginContainer/HBoxContainer/VBoxContainer/Panel" unique_id=384079083]
 layout_mode = 0
 offset_top = 29.0
-offset_right = 149.0
+offset_right = 150.0
 offset_bottom = 69.0
 text = "Locate"
 scroll_active = false
@@ -102,10 +102,10 @@ horizontal_alignment = 1
 
 [node name="Classroom" type="RichTextLabel" parent="PlayerGui/MarginContainer/HBoxContainer/VBoxContainer/Panel" unique_id=1515149230]
 layout_mode = 0
-offset_left = 2.0
-offset_top = 40.0
-offset_right = 153.0
-offset_bottom = 172.0
+offset_left = 10.0
+offset_top = 57.0
+offset_right = 136.0
+offset_bottom = 230.0
 text = "N3"
 scroll_active = false
 autowrap_mode = 0

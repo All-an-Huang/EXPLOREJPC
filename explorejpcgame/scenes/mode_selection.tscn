@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c47gh2s1tc7v4"]
+
+[node name="mode_selection" type="Control" unique_id=1855412504]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

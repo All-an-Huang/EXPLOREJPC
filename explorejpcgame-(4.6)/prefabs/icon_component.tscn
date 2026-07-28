@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bviciish4j65h"]
+
+[ext_resource type="Script" uid="uid://bvtwf1rrm08ae" path="res://scripts/icon_component.gd" id="1_wv6eh"]
+
+[node name="IconComponent" type="Node3D" unique_id=1338128912]
+script = ExtResource("1_wv6eh")
+
+[node name="IconSprite" type="Sprite3D" parent="." unique_id=955962598]
+layers = 524288
+pixel_size = 0.001
+axis = 1
+no_depth_test = true
+fixed_size = true

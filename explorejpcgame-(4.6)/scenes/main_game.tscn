@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://cprxfcy51yi71" path="res://school_map.jpeg" id="1_72e8q"]
 [ext_resource type="PackedScene" uid="uid://dck5u1ykk08vr" path="res://prefabs/player.tscn" id="2_72e8q"]
-[ext_resource type="Script" uid="uid://c8t42761pt1kh" path="res://scripts/building.gd" id="3_0rdsr"]
 [ext_resource type="Script" uid="uid://skk5qdfhw8xo" path="res://scripts/minimap_cam.gd" id="3_d2op2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_72e8q"]
@@ -23,9 +22,6 @@ albedo_color = Color(0.29381996, 0.83, 0.1992, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2op2"]
 albedo_texture = ExtResource("1_72e8q")
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_w0p78"]
-size = Vector3(6.366699, 7.3965454, 1)
 
 [node name="main_game" type="Node3D" unique_id=1592168361]
 
@@ -51,400 +47,401 @@ size = Vector3(200, 0.1, 200)
 [node name="Player" parent="." unique_id=1821036914 instance=ExtResource("2_72e8q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 97.53844, 0.89625263, -47.3305)
 
-[node name="Classrooms" type="Node3D" parent="." unique_id=1944937579]
+[node name="C BLOCK" type="Node3D" parent="." unique_id=1885011654]
 
-[node name="C1" type="CSGPolygon3D" parent="Classrooms" unique_id=175544515]
+[node name="C1" type="CSGPolygon3D" parent="C BLOCK" unique_id=175544515 groups=["classroom"]]
 transform = Transform3D(0.31506944, 0.9490685, 1.738426e-07, -9.255919e-09, -4.272017e-08, 4, 0.9490684, -0.31506944, -1.870131e-08, 109.98717, 4, -108.83864)
 use_collision = true
 polygon = PackedVector2Array(-4.3239746, -2.5077133, -5.2031403, 2.9700851, 0.4296646, 2.7069092, -0.16537476, -2.6947937)
 
-[node name="C2" type="CSGPolygon3D" parent="Classrooms" unique_id=1455419440]
+[node name="C2" type="CSGPolygon3D" parent="C BLOCK" unique_id=1455419440 groups=["classroom"]]
 transform = Transform3D(0.31506944, 0.9490685, 1.738426e-07, -9.255919e-09, -4.272017e-08, 4, 0.9490684, -0.31506944, -1.870131e-08, 107.66322, 4, -115.839386)
 use_collision = true
 polygon = PackedVector2Array(-2.0394287, -2.272728, -2.2467003, 3.0758362, 2.0558662, 2.910286, 2.8770523, -2.490242)
 
-[node name="C3" type="CSGPolygon3D" parent="Classrooms" unique_id=1832391961]
+[node name="C3" type="CSGPolygon3D" parent="C BLOCK" unique_id=1832391961 groups=["classroom"]]
 transform = Transform3D(0.31506944, 0.9490685, 1.738426e-07, -9.255919e-09, -4.272017e-08, 4, 0.9490684, -0.31506944, -1.870131e-08, 107.18296, 4, -122.53945)
 use_collision = true
 polygon = PackedVector2Array(-0.8383446, -3.6070938, -1.2867279, 1.5885849, 4.1144066, 1.4257431, 4.322529, -3.9536896)
 
-[node name="C4" type="CSGPolygon3D" parent="Classrooms" unique_id=470004285]
+[node name="C4" type="CSGPolygon3D" parent="C BLOCK" unique_id=470004285 groups=["classroom"]]
 transform = Transform3D(0.3150694, 0.94906855, 1.7384257e-07, -9.255917e-09, -4.272017e-08, 4, 0.9490685, -0.31506944, -1.8701312e-08, 104.708466, 4, -127.75018)
 use_collision = true
 polygon = PackedVector2Array(-2.5862808, -0.6478195, -3.3808594, 2.8190079, 4.317974, 2.36734, 4.6700706, -1.285141)
 
-[node name="C5" type="CSGPolygon3D" parent="Classrooms" unique_id=1236691174]
+[node name="C5" type="CSGPolygon3D" parent="C BLOCK" unique_id=1236691174 groups=["classroom"]]
 transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 102.06487, 4, -125.746864)
 use_collision = true
 polygon = PackedVector2Array(-3.2416077, -1.3828506, -3.21278, 2.8743286, 1.6738014, 1.7090454, 1.5472412, -1.2958527)
 
-[node name="C6" type="CSGPolygon3D" parent="Classrooms" unique_id=1929253002]
+[node name="C6" type="CSGPolygon3D" parent="C BLOCK" unique_id=1929253002 groups=["classroom"]]
 transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 99.1273, 4, -124.25844)
 use_collision = true
 polygon = PackedVector2Array(-3.26305, -0.32553864, -3.1987076, 1.8414993, 3.6224213, 1.8973694, 3.5265198, 0.0039749146)
 
-[node name="C7" type="CSGPolygon3D" parent="Classrooms" unique_id=613410382]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 91.65967, 4, -120.929436)
-use_collision = true
-polygon = PackedVector2Array(-2.9922905, -1.2844391, -2.9876633, 1.0521011, 2.953659, 0.3802414, 3.0042381, -2.031311)
-
-[node name="C8" type="CSGPolygon3D" parent="Classrooms" unique_id=2061883248]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 89.00689, 4, -119.58531)
-use_collision = true
-polygon = PackedVector2Array(-3.036541, -1.5230713, -2.9814262, 1.5767441, 3.015335, 0.8468933, 2.9504967, -1.6587143)
-
-[node name="C9" type="CSGPolygon3D" parent="Classrooms" unique_id=964631738]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 86.07251, 4, -118.09852)
-use_collision = true
-polygon = PackedVector2Array(-3.0490112, -1.0211182, -2.9743538, 1.730423, 2.9206047, 1.5901337, 2.8493996, -1.1440277)
-
-[node name="C10" type="CSGPolygon3D" parent="Classrooms" unique_id=788800481]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 83.18738, 4, -116.36421)
-use_collision = true
-polygon = PackedVector2Array(-3.401291, -1.3545761, -3.250637, 2.2732964, 3.5032272, 2.0979462, 3.3653374, -1.1267014)
-
-[node name="C11" type="CSGPolygon3D" parent="Classrooms" unique_id=949463545]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 79.9422, 4, -114.70679)
-use_collision = true
-polygon = PackedVector2Array(-3.451458, -1.4570847, -3.4010963, 2.23983, 3.3238907, 2.438652, 3.2732887, -1.0332108)
-
-[node name="C12" type="CSGPolygon3D" parent="Classrooms" unique_id=1180995718]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 76.74396, 4, -113.09006)
-use_collision = true
-polygon = PackedVector2Array(-3.5072365, -1.249382, -3.4456673, 2.073944, 3.2236214, 2.4887352, 3.0530434, -1.2295113)
-
-[node name="C13" type="CSGPolygon3D" parent="Classrooms" unique_id=686304622]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 73.8635, 4, -111.6667)
-use_collision = true
-polygon = PackedVector2Array(-3.6351967, -1.5237045, -3.4910355, 1.9061737, 3.0858116, 1.9919052, 2.9425316, -2.1092377)
-
-[node name="C14" type="CSGPolygon3D" parent="Classrooms" unique_id=611316902]
-transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 69.16318, 4, -111.7455)
-use_collision = true
-polygon = PackedVector2Array(-2.8008423, -0.7773304, -2.7767982, 0.9940071, 2.682167, 2.4840012, 2.6663628, 0.888299)
-
-[node name="C15" type="CSGPolygon3D" parent="Classrooms" unique_id=651437546]
-transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 66.913506, 4, -107.4699)
-use_collision = true
-polygon = PackedVector2Array(-2.1411972, -2.9274855, -1.948555, 1.5656633, 1.2353439, 1.8610363, 0.81201553, -2.5793896)
-
-[node name="C16" type="CSGPolygon3D" parent="Classrooms" unique_id=1330295772]
-transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 96.70943, 4, -114.80795)
-use_collision = true
-polygon = PackedVector2Array(-1.9824944, -2.3170776, -2.8152466, 2.2867126, 1.6522675, 2.2859116, 2.3536377, -2.3581505)
-
-[node name="C17" type="CSGPolygon3D" parent="Classrooms" unique_id=1832777098]
-transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 97.762314, 4, -110.9067)
-use_collision = true
-polygon = PackedVector2Array(-1.5883293, -2.38562, -2.3054085, 2.3170586, 0.87643814, 2.371746, 2.1710052, -2.4699936)
-
-[node name="C18" type="CSGPolygon3D" parent="Classrooms" unique_id=1744514228]
-transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 98.85525, 4, -106.85701)
-use_collision = true
-polygon = PackedVector2Array(-1.9255142, -2.407875, -3.289589, 2.4282227, 1.1356506, 2.4131699, 2.292797, -2.4305954)
-
-[node name="C19" type="CSGPolygon3D" parent="Classrooms" unique_id=629552697]
-transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 99.89009, 4, -103.02255)
-use_collision = true
-polygon = PackedVector2Array(-1.5407715, -2.3520088, -2.6751556, 2.3459854, 1.7577896, 2.2920303, 2.648859, -2.313652)
-
-[node name="INT1" type="CSGPolygon3D" parent="Classrooms" unique_id=576158656]
-transform = Transform3D(1.0838807, 3.8503516, 1.7384258e-07, -2.9104513e-08, -1.724062e-07, 4, 3.8503516, -1.0838807, -1.87013e-08, 58.576546, 4, -79.36718)
-use_collision = true
-polygon = PackedVector2Array(-0.78813124, -0.5215337, -0.9775424, 0.4367261, 0.74299574, 0.43467236, 0.9275849, -0.47062802)
-
-[node name="INT2" type="CSGPolygon3D" parent="Classrooms" unique_id=629573390]
-transform = Transform3D(1.0838807, 3.8503516, 1.7384258e-07, -2.9104513e-08, -1.724062e-07, 4, 3.8503516, -1.0838807, -1.87013e-08, 53.85624, 4, -78.87691)
-use_collision = true
-polygon = PackedVector2Array(-1.1558242, 0.24962401, -0.9462228, 0.61536956, 0.5640044, 0.65689707, 0.6498065, 0.29453444, 0.84998703, 0.28119254, 0.9627676, -0.36906314, -0.3405962, -0.38420773, -0.9267564, -0.03522563, -0.9023137, 0.10049462)
-
-[node name="E1" type="CSGPolygon3D" parent="Classrooms" unique_id=1860922291]
-transform = Transform3D(3.8136065, 1.206818, 1.7384254e-07, -1.6009933e-07, -7.027929e-08, 4, 1.206818, -3.8136065, -1.8701716e-08, 71.16446, 8, -81.70776)
-use_collision = true
-polygon = PackedVector2Array(-0.62135816, -0.758688, -0.8734889, 0.5470133, 0.25306988, 0.50740147, 0.59798765, -0.7238064)
-
-[node name="E2" type="CSGPolygon3D" parent="Classrooms" unique_id=2052024188]
-transform = Transform3D(3.8136065, 1.206818, 1.7384254e-07, -1.6009933e-07, -7.027929e-08, 4, 1.206818, -3.8136065, -1.8701716e-08, 65.29177, 8, -82.827065)
-use_collision = true
-polygon = PackedVector2Array(-0.24670696, -0.5858021, -0.5398934, 0.72556305, 0.5669353, 0.72592163, 0.8192611, -0.5843096)
-
-[node name="M4" type="CSGPolygon3D" parent="Classrooms" unique_id=245587613]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -21.48774, 4, -38.407627)
-use_collision = true
-polygon = PackedVector2Array(-7.602642, -3.9454422, -9.473356, 1.1523895, -1.6759253, 3.614151, 0.29493713, -2.2087975)
-
-[node name="M5" type="CSGPolygon3D" parent="Classrooms" unique_id=1970669258]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
-use_collision = true
-polygon = PackedVector2Array(-7.4665575, -4.3121147, -9.793021, 2.568489, -2.0108738, 4.3551865, 0.45030975, -2.9419403)
-
-[node name="M6" type="CSGPolygon3D" parent="Classrooms" unique_id=1733621215]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
-use_collision = true
-polygon = PackedVector2Array(-3.420474, -10.206928, -5.3534775, -3.929512, 0.3650322, -2.9970207, 2.7311897, -9.264664)
-
-[node name="M7" type="CSGPolygon3D" parent="Classrooms" unique_id=1519109245]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
-use_collision = true
-polygon = PackedVector2Array(-13.99378, -11.132439, -15.135441, -5.596176, -5.353758, -3.9138832, -3.6698027, -9.517073)
-
-[node name="M8" type="CSGPolygon3D" parent="Classrooms" unique_id=1630561269]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
-use_collision = true
-polygon = PackedVector2Array(-20.23505, -12.122248, -21.307568, -6.61887, -15.157129, -5.6071167, -14.007201, -11.1423435)
-
-[node name="M9" type="CSGPolygon3D" parent="Classrooms" unique_id=137162579]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
-use_collision = true
-polygon = PackedVector2Array(-28.593418, -13.414724, -30.79567, -7.4096375, -23.519697, -5.46574, -21.706314, -12.297049)
-
-[node name="M10" type="CSGPolygon3D" parent="Classrooms" unique_id=852464272]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
-use_collision = true
-polygon = PackedVector2Array(-30.797668, -7.4019146, -32.996212, -1.6918144, -25.21685, -0.5357361, -23.533442, -5.432804)
-
-[node name="M11" type="CSGPolygon3D" parent="Classrooms" unique_id=2124484591]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
-use_collision = true
-polygon = PackedVector2Array(-32.99654, -1.6599579, -34.877213, 2.5782013, -26.657797, 4.234276, -25.242298, -0.48376083)
-
-[node name="M13" type="CSGPolygon3D" parent="Classrooms" unique_id=445654586]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
-use_collision = true
-polygon = PackedVector2Array(-39.547855, 15.765942, -41.504894, 20.87642, -32.58544, 23.520405, -30.735003, 18.174416)
-
-[node name="M14" type="CSGPolygon3D" parent="Classrooms" unique_id=1317445337]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
-use_collision = true
-polygon = PackedVector2Array(-41.510597, 20.882687, -43.716763, 26.830788, -34.34898, 28.114243, -32.635773, 23.523727)
-
-[node name="M15" type="CSGPolygon3D" parent="Classrooms" unique_id=1080387017]
-transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -47.294785, 4, -40.951305)
-use_collision = true
-polygon = PackedVector2Array(-39.268295, 15.303085, -40.947952, 19.810856, -30.326118, 22.059666, -28.444866, 16.726818)
-
-[node name="RSC 1" type="CSGPolygon3D" parent="Classrooms" unique_id=1570552587 groups=["classroom"]]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 110.714676, 4, -74.10718)
-use_collision = true
-polygon = PackedVector2Array(-5.990865, 0.30641174, -6.4795074, 2.4773712, -5.5070596, 4.6441727, -2.201191, 5.006321, -0.6201153, -0.85585785, -3.8825111, -1.3450546)
-script = ExtResource("3_0rdsr")
-
-[node name="Arrival Zone" type="Area3D" parent="Classrooms/RSC 1" unique_id=2114900876]
-transform = Transform3D(1, 0, 0, 0, 1, -4.440892e-15, 0, -2.7755576e-16, 1, -24.18668, 8.289032, -0.9999998)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/RSC 1/Arrival Zone" unique_id=1846246704]
-transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
-shape = SubResource("BoxShape3D_w0p78")
-
-[node name="RSC 2" type="CSGPolygon3D" parent="Classrooms" unique_id=1148940516]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 110.714676, 4, -74.10718)
-use_collision = true
-polygon = PackedVector2Array(3.1417751, -0.24345398, -0.5625744, -0.8149185, -2.124875, 4.9693947, 1.184823, 5.7630997, 1.5957718, 4.2569046, 3.748868, 4.4673347, 5.0016603, 1.1707077, 2.581418, 0.89676666)
-
-[node name="IT1" type="CSGPolygon3D" parent="Classrooms" unique_id=302951557]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 116.57633, 8, -100.58425)
-use_collision = true
-polygon = PackedVector2Array(-25.199574, 3.9134445, -21.18879, 7.443512, -17.431728, 6.390747, -18.290491, 2.0233536)
-
-[node name="IT2" type="CSGPolygon3D" parent="Classrooms" unique_id=1077574425]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 116.3692, 8, -99.04171)
-use_collision = true
-polygon = PackedVector2Array(-27.878454, 1.4254379, -25.171299, 3.8741913, -18.30455, 2.024109, -19.435764, -2.369217)
-
-[node name="Arrival Zone" type="Area3D" parent="Classrooms/IT2" unique_id=570044956]
-transform = Transform3D(1, 0, 0, 0, 1, -4.440892e-15, 0, -2.7755576e-16, 1, -24.18668, 8.289032, -0.9999998)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/IT2/Arrival Zone" unique_id=2145021275]
-transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
-shape = SubResource("BoxShape3D_w0p78")
-
-[node name="D1" type="CSGPolygon3D" parent="Classrooms" unique_id=1505899079]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.17198, 4, -81.18218)
-use_collision = true
-polygon = PackedVector2Array(-12.367161, -0.198555, -9.605914, 5.9393806, -2.568346, 4.8771706, -5.23193, -1.7394257)
-
-[node name="D2" type="CSGPolygon3D" parent="Classrooms" unique_id=2058108920]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.17198, 4, -81.18218)
-use_collision = true
-polygon = PackedVector2Array(-4.310508, 0.4690628, -2.541153, 4.880554, 3.995037, 3.530098, 2.1962128, -0.75286484)
-
-[node name="D3" type="CSGPolygon3D" parent="Classrooms" unique_id=1628557937]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.172, 4, -81.182)
-use_collision = true
-polygon = PackedVector2Array(1.3085289, -3.1042786, 4.007082, 3.5252533, 10.403776, 2.3477364, 7.3591957, -4.2653275)
-
-[node name="D5" type="CSGPolygon3D" parent="Classrooms" unique_id=1938473190]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.82651, 4, -87.678)
-use_collision = true
-polygon = PackedVector2Array(-0.69781303, 4.625679, 1.2450218, 9.950886, 6.006546, 8.446083, 3.926138, 3.7664986)
-
-[node name="D6" type="CSGPolygon3D" parent="Classrooms" unique_id=935077101]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.877945, 8, -87.68353)
-use_collision = true
-polygon = PackedVector2Array(-17.44334, 4.094055, -16.107723, 7.32032, -10.85564, 6.4168777, -12.125569, 3.1156998)
-
-[node name="D7" type="CSGPolygon3D" parent="Classrooms" unique_id=573440855]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.877945, 8, -87.68353)
-use_collision = true
-polygon = PackedVector2Array(-12.099281, 3.1280022, -10.845468, 6.36578, -6.064375, 5.611904, -7.4226856, 2.2591896)
-
-[node name="D8" type="CSGPolygon3D" parent="Classrooms" unique_id=114299845]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.878006, 8, -87.68342)
-use_collision = true
-polygon = PackedVector2Array(-7.398693, 2.2621078, -6.0489197, 5.573063, -1.6898098, 4.8080063, -3.1772118, 1.3993225)
-
-[node name="D9" type="CSGPolygon3D" parent="Classrooms" unique_id=26795548]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.877945, 8, -87.68353)
-use_collision = true
-polygon = PackedVector2Array(-3.1445065, 1.3997078, -1.6544266, 4.79797, 3.9122505, 3.7945595, 2.4374638, 0.29535294)
-
-[node name="N1" type="CSGPolygon3D" parent="Classrooms" unique_id=35971937]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
-use_collision = true
-polygon = PackedVector2Array(0.15080261, -1.8169403, -1.1395988, 3.930893, 2.1573334, 4.710266, 3.583332, -1.1450424)
-
-[node name="N2" type="CSGPolygon3D" parent="Classrooms" unique_id=1115598251]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
-use_collision = true
-polygon = PackedVector2Array(-3.1357403, -2.448822, -4.6817017, 2.897026, -1.1933136, 3.911232, 0.07516098, -1.76651)
-
-[node name="N3" type="CSGPolygon3D" parent="Classrooms" unique_id=79787836]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
-use_collision = true
-polygon = PackedVector2Array(-8.116838, -3.3173447, -10.110077, 1.5932541, -4.713976, 2.8818054, -3.1895237, -2.4301453)
-
-[node name="N4" type="CSGPolygon3D" parent="Classrooms" unique_id=1911629967]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
-use_collision = true
-polygon = PackedVector2Array(-13.072361, -4.251938, -13.962448, 0.54048157, -10.149685, 1.6285629, -8.176336, -3.318657)
-
-[node name="N5" type="CSGPolygon3D" parent="Classrooms" unique_id=430481114]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
-use_collision = true
-polygon = PackedVector2Array(-13.952698, 0.6095886, -15.106535, 5.372917, -11.15366, 5.1964493, -10.107168, 1.6445847)
-
-[node name="N6" type="CSGPolygon3D" parent="Classrooms" unique_id=2146417070]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
-use_collision = true
-polygon = PackedVector2Array(-10.086239, 1.592308, -11.108219, 5.1572647, -7.06118, 5.873047, -5.765545, 2.6731873)
-
-[node name="L1" type="CSGPolygon3D" parent="Classrooms" unique_id=2058443012]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 111.788795, 4, -105.46603)
-use_collision = true
-polygon = PackedVector2Array(-1.7999077, -2.8309631, -2.560604, 3.1284409, 3.0601578, 4.102463, 3.8026848, -1.9071121)
-
-[node name="L2" type="CSGPolygon3D" parent="Classrooms" unique_id=1253574471]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 113.312614, 4, -99.987305)
-use_collision = true
-polygon = PackedVector2Array(-2.5316467, -3.0402222, -2.7637444, 3.0074158, 3.0601578, 4.102463, 3.8026848, -1.9071121)
-
-[node name="L3" type="CSGPolygon3D" parent="Classrooms" unique_id=1143671037]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 115.27458, 4, -93.79855)
-use_collision = true
-polygon = PackedVector2Array(-1.7785072, -2.7776108, -2.7106342, 3.0980682, 3.5577507, 4.2672195, 3.7436256, -1.7492447)
-
-[node name="L4" type="CSGPolygon3D" parent="Classrooms" unique_id=1128707833]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 116.98989, 4, -87.905754)
-use_collision = true
-polygon = PackedVector2Array(-1.7999077, -2.8309631, -2.51869, 2.1405869, 3.4608288, 3.2756424, 4.2437363, -1.7581253)
-
-[node name="L5" type="CSGPolygon3D" parent="Classrooms" unique_id=1457775274]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 113.27426, 4, -86.592964)
-use_collision = true
-polygon = PackedVector2Array(-1.5687141, -1.536171, -1.9591522, 2.586525, 5.2450924, 3.277794, 6.3401184, 0.603508)
-
-[node name="Admin Rooms" type="Node3D" parent="." unique_id=1885011654]
-
-[node name="language faculity" type="CSGPolygon3D" parent="Admin Rooms" unique_id=281340843]
+[node name="language faculity" type="CSGPolygon3D" parent="C BLOCK" unique_id=281340843 groups=["classroom"]]
 transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 94.50131, 4, -124.111374)
 use_collision = true
 polygon = PackedVector2Array(-1.3744469, -2.8386612, -1.2606163, 3.78611, 5.5150948, 4.0346146, 5.5704613, -0.0004119873, 0.9041176, -0.13637543, 0.82561874, -3.0615616)
 
-[node name="C f toilet" type="CSGPolygon3D" parent="Admin Rooms" unique_id=135158889]
+[node name="C f toilet" type="CSGPolygon3D" parent="C BLOCK" unique_id=135158889]
 transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 95.98638, 4, -121.75267)
 use_collision = true
 polygon = PackedVector2Array(-1.9335175, -3.4819489, -1.8783073, -0.4992218, 1.8461609, -0.46362305, 1.757782, -3.8256226)
 
-[node name="C m toilet" type="CSGPolygon3D" parent="Admin Rooms" unique_id=1735041686]
+[node name="C7" type="CSGPolygon3D" parent="C BLOCK" unique_id=613410382 groups=["classroom"]]
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 91.65967, 4, -120.929436)
+use_collision = true
+polygon = PackedVector2Array(-2.9922905, -1.2844391, -2.9876633, 1.0521011, 2.953659, 0.3802414, 3.0042381, -2.031311)
+
+[node name="C8" type="CSGPolygon3D" parent="C BLOCK" unique_id=2061883248 groups=["classroom"]]
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 89.00689, 4, -119.58531)
+use_collision = true
+polygon = PackedVector2Array(-3.036541, -1.5230713, -2.9814262, 1.5767441, 3.015335, 0.8468933, 2.9504967, -1.6587143)
+
+[node name="C9" type="CSGPolygon3D" parent="C BLOCK" unique_id=964631738 groups=["classroom"]]
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 86.07251, 4, -118.09852)
+use_collision = true
+polygon = PackedVector2Array(-3.0490112, -1.0211182, -2.9743538, 1.730423, 2.9206047, 1.5901337, 2.8493996, -1.1440277)
+
+[node name="C10" type="CSGPolygon3D" parent="C BLOCK" unique_id=788800481 groups=["classroom"]]
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 83.18738, 4, -116.36421)
+use_collision = true
+polygon = PackedVector2Array(-3.401291, -1.3545761, -3.250637, 2.2732964, 3.5032272, 2.0979462, 3.3653374, -1.1267014)
+
+[node name="C11" type="CSGPolygon3D" parent="C BLOCK" unique_id=949463545 groups=["classroom"]]
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 79.9422, 4, -114.70679)
+use_collision = true
+polygon = PackedVector2Array(-3.451458, -1.4570847, -3.4010963, 2.23983, 3.3238907, 2.438652, 3.2732887, -1.0332108)
+
+[node name="C12" type="CSGPolygon3D" parent="C BLOCK" unique_id=1180995718 groups=["classroom"]]
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 76.74396, 4, -113.09006)
+use_collision = true
+polygon = PackedVector2Array(-3.5072365, -1.249382, -3.4456673, 2.073944, 3.2236214, 2.4887352, 3.0530434, -1.2295113)
+
+[node name="C13" type="CSGPolygon3D" parent="C BLOCK" unique_id=686304622 groups=["classroom"]]
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 73.8635, 4, -111.6667)
+use_collision = true
+polygon = PackedVector2Array(-3.6351967, -1.5237045, -3.4910355, 1.9061737, 3.0858116, 1.9919052, 2.9425316, -2.1092377)
+
+[node name="C m toilet" type="CSGPolygon3D" parent="C BLOCK" unique_id=1735041686]
 transform = Transform3D(-0.08113852, -3.9868114, 4.3460638e-08, -1.1335524e-09, 1.7478675e-07, 1, -0.99670285, 0.3245541, -4.6752997e-09, 69.84778, 4, -110.39803)
 use_collision = true
 polygon = PackedVector2Array(-2.5734444, -0.8094568, -1.9069519, -0.27746153, 3.8004189, -0.302289)
 depth = 4.0
 
-[node name="maths faculty" type="CSGPolygon3D" parent="Admin Rooms" unique_id=2004301219]
+[node name="C14" type="CSGPolygon3D" parent="C BLOCK" unique_id=611316902 groups=["classroom"]]
+transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 69.16318, 4, -111.7455)
+use_collision = true
+polygon = PackedVector2Array(-2.8008423, -0.7773304, -2.7767982, 0.9940071, 2.682167, 2.4840012, 2.6663628, 0.888299)
+
+[node name="maths faculty" type="CSGPolygon3D" parent="C BLOCK" unique_id=2004301219]
 transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 66.529625, 4, -112.011)
 use_collision = true
 polygon = PackedVector2Array(-3.1019402, 1.734539, 2.327896, 3.4252253, 2.224453, -1.5798349, -3.1133614, -2.2902584)
 
-[node name="GYM" type="CSGPolygon3D" parent="Admin Rooms" unique_id=576031850]
+[node name="C15" type="CSGPolygon3D" parent="C BLOCK" unique_id=651437546 groups=["classroom"]]
+transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 66.913506, 4, -107.4699)
+use_collision = true
+polygon = PackedVector2Array(-2.1411972, -2.9274855, -1.948555, 1.5656633, 1.2353439, 1.8610363, 0.81201553, -2.5793896)
+
+[node name="C16" type="CSGPolygon3D" parent="C BLOCK" unique_id=1330295772 groups=["classroom"]]
+transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 96.70943, 4, -114.80795)
+use_collision = true
+polygon = PackedVector2Array(-1.9824944, -2.3170776, -2.8152466, 2.2867126, 1.6522675, 2.2859116, 2.3536377, -2.3581505)
+
+[node name="C17" type="CSGPolygon3D" parent="C BLOCK" unique_id=1832777098 groups=["classroom"]]
+transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 97.762314, 4, -110.9067)
+use_collision = true
+polygon = PackedVector2Array(-1.5883293, -2.38562, -2.3054085, 2.3170586, 0.87643814, 2.371746, 2.1710052, -2.4699936)
+
+[node name="C18" type="CSGPolygon3D" parent="C BLOCK" unique_id=1744514228 groups=["classroom"]]
+transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 98.85525, 4, -106.85701)
+use_collision = true
+polygon = PackedVector2Array(-1.9255142, -2.407875, -3.289589, 2.4282227, 1.1356506, 2.4131699, 2.292797, -2.4305954)
+
+[node name="C19" type="CSGPolygon3D" parent="C BLOCK" unique_id=629552697 groups=["classroom"]]
+transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 99.89009, 4, -103.02255)
+use_collision = true
+polygon = PackedVector2Array(-1.5407715, -2.3520088, -2.6751556, 2.3459854, 1.7577896, 2.2920303, 2.648859, -2.313652)
+
+[node name="INT BLOCK" type="Node3D" parent="." unique_id=1617476046]
+
+[node name="INT1" type="CSGPolygon3D" parent="INT BLOCK" unique_id=576158656 groups=["classroom"]]
+transform = Transform3D(1.0838807, 3.8503516, 1.7384258e-07, -2.9104513e-08, -1.724062e-07, 4, 3.8503516, -1.0838807, -1.87013e-08, 58.576546, 4, -79.36718)
+use_collision = true
+polygon = PackedVector2Array(-0.78813124, -0.5215337, -0.9775424, 0.4367261, 0.74299574, 0.43467236, 0.9275849, -0.47062802)
+
+[node name="INT2" type="CSGPolygon3D" parent="INT BLOCK" unique_id=629573390 groups=["classroom"]]
+transform = Transform3D(1.0838807, 3.8503516, 1.7384258e-07, -2.9104513e-08, -1.724062e-07, 4, 3.8503516, -1.0838807, -1.87013e-08, 53.85624, 4, -78.87691)
+use_collision = true
+polygon = PackedVector2Array(-1.1558242, 0.24962401, -0.9462228, 0.61536956, 0.5640044, 0.65689707, 0.6498065, 0.29453444, 0.84998703, 0.28119254, 0.9627676, -0.36906314, -0.3405962, -0.38420773, -0.9267564, -0.03522563, -0.9023137, 0.10049462)
+
+[node name="E BLOCK + GYM" type="Node3D" parent="." unique_id=1985558440]
+
+[node name="GYM" type="CSGPolygon3D" parent="E BLOCK + GYM" unique_id=576031850]
 transform = Transform3D(3.9804986, 0.39450026, 1.7384251e-07, -1.711505e-07, -3.575579e-08, 4, 0.39450026, -3.9804986, -1.8701767e-08, 69.15528, 4, -85.994095)
 use_collision = true
 polygon = PackedVector2Array(-1.6468923, -1.7206855, -1.6561623, 2.88863, 1.7682934, 2.2067413, 1.3265014, -2.0780892, 0.9733257, -2.0083385, 0.9957695, -2.6618905, -0.03667164, -2.430614, -0.042140007, -2.6361399, -0.58525515, -2.546362, -0.5893631, -2.3021722, -1.4177334, -2.1535044)
 
-[node name="M f toilet" type="CSGPolygon3D" parent="Admin Rooms" unique_id=878286894]
+[node name="E1" type="CSGPolygon3D" parent="E BLOCK + GYM" unique_id=1860922291 groups=["classroom"]]
+transform = Transform3D(3.8136065, 1.206818, 1.7384254e-07, -1.6009933e-07, -7.027929e-08, 4, 1.206818, -3.8136065, -1.8701716e-08, 71.16446, 8, -81.70776)
+use_collision = true
+polygon = PackedVector2Array(-0.62135816, -0.758688, -0.8734889, 0.5470133, 0.25306988, 0.50740147, 0.59798765, -0.7238064)
+
+[node name="E2" type="CSGPolygon3D" parent="E BLOCK + GYM" unique_id=2052024188 groups=["classroom"]]
+transform = Transform3D(3.8136065, 1.206818, 1.7384254e-07, -1.6009933e-07, -7.027929e-08, 4, 1.206818, -3.8136065, -1.8701716e-08, 65.29177, 8, -82.827065)
+use_collision = true
+polygon = PackedVector2Array(-0.24670696, -0.5858021, -0.5398934, 0.72556305, 0.5669353, 0.72592163, 0.8192611, -0.5843096)
+
+[node name="M BLOCK" type="Node3D" parent="." unique_id=1825126061]
+
+[node name="M4" type="CSGPolygon3D" parent="M BLOCK" unique_id=245587613 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -21.48774, 4, -38.407627)
+use_collision = true
+polygon = PackedVector2Array(-7.602642, -3.9454422, -9.473356, 1.1523895, -1.6759253, 3.614151, 0.29493713, -2.2087975)
+
+[node name="M5" type="CSGPolygon3D" parent="M BLOCK" unique_id=1970669258 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
+use_collision = true
+polygon = PackedVector2Array(-7.4665575, -4.3121147, -9.793021, 2.568489, -2.0108738, 4.3551865, 0.45030975, -2.9419403)
+
+[node name="M6" type="CSGPolygon3D" parent="M BLOCK" unique_id=1733621215 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
+use_collision = true
+polygon = PackedVector2Array(-3.420474, -10.206928, -5.3534775, -3.929512, 0.3650322, -2.9970207, 2.7311897, -9.264664)
+
+[node name="M7" type="CSGPolygon3D" parent="M BLOCK" unique_id=1519109245 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
+use_collision = true
+polygon = PackedVector2Array(-13.99378, -11.132439, -15.135441, -5.596176, -5.353758, -3.9138832, -3.6698027, -9.517073)
+
+[node name="M8" type="CSGPolygon3D" parent="M BLOCK" unique_id=1630561269 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
+use_collision = true
+polygon = PackedVector2Array(-20.23505, -12.122248, -21.307568, -6.61887, -15.157129, -5.6071167, -14.007201, -11.1423435)
+
+[node name="M9" type="CSGPolygon3D" parent="M BLOCK" unique_id=137162579 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
+use_collision = true
+polygon = PackedVector2Array(-28.593418, -13.414724, -30.79567, -7.4096375, -23.519697, -5.46574, -21.706314, -12.297049)
+
+[node name="M10" type="CSGPolygon3D" parent="M BLOCK" unique_id=852464272 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
+use_collision = true
+polygon = PackedVector2Array(-30.797668, -7.4019146, -32.996212, -1.6918144, -25.21685, -0.5357361, -23.533442, -5.432804)
+
+[node name="M11" type="CSGPolygon3D" parent="M BLOCK" unique_id=2124484591 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
+use_collision = true
+polygon = PackedVector2Array(-32.99654, -1.6599579, -34.877213, 2.5782013, -26.657797, 4.234276, -25.242298, -0.48376083)
+
+[node name="M f toilet" type="CSGPolygon3D" parent="M BLOCK" unique_id=878286894]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-38.41256, 12.90237, -39.526806, 15.7492485, -31.551159, 17.930202, -30.584534, 15.231606)
 
-[node name="Dance Studio" type="CSGPolygon3D" parent="Admin Rooms" unique_id=778404723]
+[node name="M13" type="CSGPolygon3D" parent="M BLOCK" unique_id=445654586 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
+use_collision = true
+polygon = PackedVector2Array(-39.547855, 15.765942, -41.504894, 20.87642, -32.58544, 23.520405, -30.735003, 18.174416)
+
+[node name="M14" type="CSGPolygon3D" parent="M BLOCK" unique_id=1317445337 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
+use_collision = true
+polygon = PackedVector2Array(-41.510597, 20.882687, -43.716763, 26.830788, -34.34898, 28.114243, -32.635773, 23.523727)
+
+[node name="Dance Studio" type="CSGPolygon3D" parent="M BLOCK" unique_id=778404723]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-43.762047, 26.847542, -45.82676, 31.896255, -22.041, 35.450813, -20.20771, 30.332245)
 
-[node name="Staffroom" type="CSGPolygon3D" parent="Admin Rooms" unique_id=1909894532]
+[node name="Staffroom" type="CSGPolygon3D" parent="M BLOCK" unique_id=1909894532]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-11.708577, 7.762993, -14.433566, 15.724361, -5.606559, 17.976982, -2.7856665, 10.358299)
 
-[node name="M m toilet" type="CSGPolygon3D" parent="Admin Rooms" unique_id=1989913022]
+[node name="M m toilet" type="CSGPolygon3D" parent="M BLOCK" unique_id=1989913022]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -47.294785, 4, -40.951305)
 use_collision = true
 polygon = PackedVector2Array(-37.957184, 12.137733, -39.264942, 15.245792, -29.91909, 16.588802, -29.126757, 14.360752)
 
-[node name="Practice Rooms" type="CSGPolygon3D" parent="Admin Rooms" unique_id=484092551]
+[node name="M15" type="CSGPolygon3D" parent="M BLOCK" unique_id=1080387017 groups=["classroom"]]
+transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -47.294785, 4, -40.951305)
+use_collision = true
+polygon = PackedVector2Array(-39.268295, 15.303085, -40.947952, 19.810856, -30.326118, 22.059666, -28.444866, 16.726818)
+
+[node name="Practice Rooms" type="CSGPolygon3D" parent="M BLOCK" unique_id=484092551]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -47.294785, 4, -40.951305)
 use_collision = true
 polygon = PackedVector2Array(-40.94902, 19.915207, -47.90338, 37.953518, -39.4998, 39.18317, -31.34256, 21.963474)
 
-[node name="Black Box" type="CSGPolygon3D" parent="Admin Rooms" unique_id=156152140]
+[node name="Black Box" type="CSGPolygon3D" parent="M BLOCK" unique_id=156152140]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -47.294785, 4, -40.951305)
 use_collision = true
 polygon = PackedVector2Array(-52.24429, 7.648884, -52.593693, 10.082211, -38.084694, 12.371738, -35.627365, 5.224766, -59.14957, 1.518055, -60.330303, 5.750744)
 
-[node name="Chapel" type="CSGPolygon3D" parent="Admin Rooms" unique_id=374864234]
+[node name="Chapel" type="CSGPolygon3D" parent="M BLOCK" unique_id=374864234]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -47.294785, 4, -40.951305)
 use_collision = true
 polygon = PackedVector2Array(-25.398947, 13.09827, -27.586296, 19.277275, -20.721628, 20.06483, -18.615902, 14.441246)
 
-[node name="Library" type="CSGPolygon3D" parent="Admin Rooms" unique_id=1755307344]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 116.33234, 4, -99.67508)
-use_collision = true
-polygon = PackedVector2Array(-29.009262, 1.8097687, -20.044437, 7.1194763, -14.22217, 5.0270233, -13.630138, -2.2085342)
+[node name="RSC BLOCK" type="Node3D" parent="." unique_id=1442043162]
 
-[node name="Careers" type="CSGPolygon3D" parent="Admin Rooms" unique_id=179779215]
+[node name="RSC 1" type="CSGPolygon3D" parent="RSC BLOCK" unique_id=1570552587 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 110.714676, 4, -74.10718)
+use_collision = true
+polygon = PackedVector2Array(-5.990865, 0.30641174, -6.4795074, 2.4773712, -5.5070596, 4.6441727, -2.201191, 5.006321, -0.6201153, -0.85585785, -3.8825111, -1.3450546)
+
+[node name="RSC 2" type="CSGPolygon3D" parent="RSC BLOCK" unique_id=1148940516 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 110.714676, 4, -74.10718)
+use_collision = true
+polygon = PackedVector2Array(3.1417751, -0.24345398, -0.5625744, -0.8149185, -2.124875, 4.9693947, 1.184823, 5.7630997, 1.5957718, 4.2569046, 3.748868, 4.4673347, 5.0016603, 1.1707077, 2.581418, 0.89676666)
+
+[node name="ADMIN BLOCK" type="Node3D" parent="." unique_id=316897355]
+
+[node name="Careers" type="CSGPolygon3D" parent="ADMIN BLOCK" unique_id=179779215]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 96.66646, 4, -77.932976)
 use_collision = true
 polygon = PackedVector2Array(-0.1271677, -1.2826385, 1.4246597, 2.3372688, 10.37672, 0.44375992, 8.776957, -3.1409912)
 
-[node name="DblockOffices" type="CSGPolygon3D" parent="Admin Rooms" unique_id=1000955622]
+[node name="DblockOffices" type="CSGPolygon3D" parent="ADMIN BLOCK" unique_id=1000955622]
 transform = Transform3D(-0.10695824, -0.9942635, -3.476851e-07, 0, -4.371139e-08, 8, -0.9942635, 0.10695824, 3.7402344e-08, 96.66673, 8, -77.93343)
 use_collision = true
 polygon = PackedVector2Array(-4.3636513, 16.855137, -1.5545073, 23.978655, 12.076897, 19.697502, 10.170269, 14.369637)
 
-[node name="FrontReception_StudentCounter" type="CSGPolygon3D" parent="Admin Rooms" unique_id=568708822]
+[node name="FrontReception_StudentCounter" type="CSGPolygon3D" parent="ADMIN BLOCK" unique_id=568708822]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 96.66646, 4, -77.932976)
 use_collision = true
 polygon = PackedVector2Array(-17.363728, -2.599907, -17.82871, -3.8571205, -23.421932, -2.7561455, -22.14915, 0.17657089, -23.09718, 0.39269638, -22.063442, 2.8628464, -21.019697, 2.7015991, -19.498178, 6.4517403, -14.298158, 4.981659, -14.943609, 3.3550415, -10.082164, 2.3489113, -7.6941433, 7.7746735, -2.0965824, 6.9839516, -4.2957077, 1.4837952, -5.8067684, -2.681816, -4.873396, -5.65781, -11.589943, -6.307186, -12.397799, -3.4565964)
 
-[node name="UpstairsStaff" type="CSGPolygon3D" parent="Admin Rooms" unique_id=631388639]
+[node name="UpstairsStaff" type="CSGPolygon3D" parent="ADMIN BLOCK" unique_id=631388639]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 96.71748, 8, -77.938896)
 use_collision = true
 polygon = PackedVector2Array(-19.777348, -2.054165, -17.45332, 3.6465034, -10.082164, 2.3489113, -7.6941433, 7.7746735, -2.0965824, 6.9839516, -6.3587084, -4.9539757, -12.397799, -3.4565964)
 
-[node name="N Toilet" type="CSGPolygon3D" parent="Admin Rooms" unique_id=962865737]
+[node name="IT BLOCK" type="Node3D" parent="." unique_id=1290501307]
+
+[node name="IT1" type="CSGPolygon3D" parent="IT BLOCK" unique_id=302951557 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
+use_collision = true
+polygon = PackedVector2Array(-25.199574, 3.9134445, -21.18879, 7.443512, -17.431728, 6.390747, -18.290491, 2.0233536)
+
+[node name="IT2" type="CSGPolygon3D" parent="IT BLOCK" unique_id=1077574425 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
+use_collision = true
+polygon = PackedVector2Array(-27.878454, 1.4254379, -25.171299, 3.8741913, -18.30455, 2.024109, -19.435764, -2.369217)
+
+[node name="Library" type="CSGPolygon3D" parent="IT BLOCK" unique_id=1755307344]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.45024, 4, -99.03658)
+use_collision = true
+polygon = PackedVector2Array(-29.009262, 1.8097687, -20.044437, 7.1194763, -14.22217, 5.0270233, -13.630138, -2.2085342)
+
+[node name="D BLOCK" type="Node3D" parent="." unique_id=157620808]
+
+[node name="D1" type="CSGPolygon3D" parent="D BLOCK" unique_id=1505899079 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.17198, 4, -81.18218)
+use_collision = true
+polygon = PackedVector2Array(-12.367161, -0.198555, -9.605914, 5.9393806, -2.568346, 4.8771706, -5.23193, -1.7394257)
+
+[node name="D2" type="CSGPolygon3D" parent="D BLOCK" unique_id=2058108920 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.17198, 4, -81.18218)
+use_collision = true
+polygon = PackedVector2Array(-4.310508, 0.4690628, -2.541153, 4.880554, 3.995037, 3.530098, 2.1962128, -0.75286484)
+
+[node name="D3" type="CSGPolygon3D" parent="D BLOCK" unique_id=1628557937 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.172, 4, -81.182)
+use_collision = true
+polygon = PackedVector2Array(1.3085289, -3.1042786, 4.007082, 3.5252533, 10.403776, 2.3477364, 7.3591957, -4.2653275)
+
+[node name="D5" type="CSGPolygon3D" parent="D BLOCK" unique_id=1938473190 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.82651, 4, -87.678)
+use_collision = true
+polygon = PackedVector2Array(-0.69781303, 4.625679, 1.2450218, 9.950886, 6.006546, 8.446083, 3.926138, 3.7664986)
+
+[node name="D6" type="CSGPolygon3D" parent="D BLOCK" unique_id=935077101 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.877945, 8, -87.68353)
+use_collision = true
+polygon = PackedVector2Array(-17.44334, 4.094055, -16.107723, 7.32032, -10.85564, 6.4168777, -12.125569, 3.1156998)
+
+[node name="D7" type="CSGPolygon3D" parent="D BLOCK" unique_id=573440855 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.877945, 8, -87.68353)
+use_collision = true
+polygon = PackedVector2Array(-12.099281, 3.1280022, -10.845468, 6.36578, -6.064375, 5.611904, -7.4226856, 2.2591896)
+
+[node name="D8" type="CSGPolygon3D" parent="D BLOCK" unique_id=114299845 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.878006, 8, -87.68342)
+use_collision = true
+polygon = PackedVector2Array(-7.398693, 2.2621078, -6.0489197, 5.573063, -1.6898098, 4.8080063, -3.1772118, 1.3993225)
+
+[node name="D9" type="CSGPolygon3D" parent="D BLOCK" unique_id=26795548 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.877945, 8, -87.68353)
+use_collision = true
+polygon = PackedVector2Array(-3.1445065, 1.3997078, -1.6544266, 4.79797, 3.9122505, 3.7945595, 2.4374638, 0.29535294)
+
+[node name="N BLOCK" type="Node3D" parent="." unique_id=513462336]
+
+[node name="N1" type="CSGPolygon3D" parent="N BLOCK" unique_id=35971937 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
+use_collision = true
+polygon = PackedVector2Array(0.15080261, -1.8169403, -1.1395988, 3.930893, 2.1573334, 4.710266, 3.583332, -1.1450424)
+
+[node name="N2" type="CSGPolygon3D" parent="N BLOCK" unique_id=1115598251 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
+use_collision = true
+polygon = PackedVector2Array(-3.1357403, -2.448822, -4.6817017, 2.897026, -1.1933136, 3.911232, 0.07516098, -1.76651)
+
+[node name="N3" type="CSGPolygon3D" parent="N BLOCK" unique_id=79787836 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
+use_collision = true
+polygon = PackedVector2Array(-8.116838, -3.3173447, -10.110077, 1.5932541, -4.713976, 2.8818054, -3.1895237, -2.4301453)
+
+[node name="N4" type="CSGPolygon3D" parent="N BLOCK" unique_id=1911629967 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
+use_collision = true
+polygon = PackedVector2Array(-13.072361, -4.251938, -13.962448, 0.54048157, -10.149685, 1.6285629, -8.176336, -3.318657)
+
+[node name="N5" type="CSGPolygon3D" parent="N BLOCK" unique_id=430481114 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
+use_collision = true
+polygon = PackedVector2Array(-13.952698, 0.6095886, -15.106535, 5.372917, -11.15366, 5.1964493, -10.107168, 1.6445847)
+
+[node name="N6" type="CSGPolygon3D" parent="N BLOCK" unique_id=2146417070 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
+use_collision = true
+polygon = PackedVector2Array(-10.086239, 1.592308, -11.108219, 5.1572647, -7.06118, 5.873047, -5.765545, 2.6731873)
+
+[node name="N Toilet" type="CSGPolygon3D" parent="N BLOCK" unique_id=962865737]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.45052, 4, -99.03618)
 use_collision = true
 polygon = PackedVector2Array(-5.72995, 2.679741, -6.995262, 5.882675, -4.082508, 6.992714, -0.37701797, 4.237076)
+
+[node name="L BLOCK" type="Node3D" parent="." unique_id=910150954]
+
+[node name="L1" type="CSGPolygon3D" parent="L BLOCK" unique_id=2058443012 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 111.788795, 4, -105.46603)
+use_collision = true
+polygon = PackedVector2Array(-1.7999077, -2.8309631, -2.560604, 3.1284409, 3.0601578, 4.102463, 3.8026848, -1.9071121)
+
+[node name="L2" type="CSGPolygon3D" parent="L BLOCK" unique_id=1253574471 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 113.312614, 4, -99.987305)
+use_collision = true
+polygon = PackedVector2Array(-2.5316467, -3.0402222, -2.7637444, 3.0074158, 3.0601578, 4.102463, 3.8026848, -1.9071121)
+
+[node name="L3" type="CSGPolygon3D" parent="L BLOCK" unique_id=1143671037 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 115.27458, 4, -93.79855)
+use_collision = true
+polygon = PackedVector2Array(-1.7785072, -2.7776108, -2.7106342, 3.0980682, 3.5577507, 4.2672195, 3.7436256, -1.7492447)
+
+[node name="L4" type="CSGPolygon3D" parent="L BLOCK" unique_id=1128707833 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 116.98989, 4, -87.905754)
+use_collision = true
+polygon = PackedVector2Array(-1.7999077, -2.8309631, -2.51869, 2.1405869, 3.4608288, 3.2756424, 4.2437363, -1.7581253)
+
+[node name="L5" type="CSGPolygon3D" parent="L BLOCK" unique_id=1457775274 groups=["classroom"]]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 113.27426, 4, -86.592964)
+use_collision = true
+polygon = PackedVector2Array(-1.5687141, -1.536171, -1.9591522, 2.586525, 5.2450924, 3.277794, 6.3401184, 0.603508)
 
 [node name="MinimapViewport" type="SubViewport" parent="." unique_id=228081809]
 size = Vector2i(150, 150)
@@ -454,5 +451,3 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 97.5
 projection = 1
 size = 30.0
 script = ExtResource("3_d2op2")
-
-[connection signal="body_entered" from="Classrooms/IT2/Arrival Zone" to="Classrooms/RSC 1" method="_on_arrival_zone_body_entered"]
