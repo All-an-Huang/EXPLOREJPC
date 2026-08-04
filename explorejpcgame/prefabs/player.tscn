@@ -111,7 +111,7 @@ scroll_active = false
 autowrap_mode = 0
 horizontal_alignment = 1
 
-[node name="Congratulations" type="RichTextLabel" parent="PlayerGui/MarginContainer/HBoxContainer/VBoxContainer/Panel" unique_id=1950151482]
+[node name="Feedback" type="RichTextLabel" parent="PlayerGui/MarginContainer/HBoxContainer/VBoxContainer/Panel" unique_id=1950151482]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 79.0

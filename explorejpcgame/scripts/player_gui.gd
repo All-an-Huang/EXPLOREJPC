@@ -3,7 +3,7 @@ extends Control
 @export var minimap_rect:TextureRect
 
 @onready var classroom_text = $MarginContainer/HBoxContainer/VBoxContainer/Panel/Classroom
-@onready var congradulations_text = $MarginContainer/HBoxContainer/VBoxContainer/Panel/Congratulations
+@onready var feedback_text = $MarginContainer/HBoxContainer/VBoxContainer/Panel/Feedback
 @onready var timer_text = $Panel/TimerText
 
 var time_limit: float = 10.0
@@ -11,7 +11,7 @@ var time_remaining: float = 0.0
 var timer_active: bool = false
 
 func _ready() -> void:
-	congradulations_text.hide()
+	feedback_text.hide()
 	classroom_text.show()
 	
 	var minimap_viewport:SubViewport = get_tree().current_scene.get_node("MinimapViewport")
@@ -26,13 +26,15 @@ func _ready() -> void:
 	start_timer(time_limit)
 
 func _on_objective_reached(building_name: String) -> void:
+	timer_active = false
 	classroom_text.hide()
-	congradulations_text.show()
-	congradulations_text.text = "Congratulations for finding %s!" % building_name
+	feedback_text.show()
+	feedback_text.text = "Congratulations for finding %s!" % building_name
 	await get_tree().create_timer(3.0).timeout
 	ObjectiveManager.choose_random_objective()
 	classroom_text.show()
-	congradulations_text.hide()
+	feedback_text.hide()
+	start_timer(time_limit)
 
 func _on_new_objective_chosen(building_name: String) -> void:
 	update_classroom_label(building_name)
@@ -66,3 +68,15 @@ func _process(delta: float) -> void:
 		if time_remaining <= 0:
 			timer_active = false
 			time_remaining = 0
+			_on_time_up()
+
+func _on_time_up() -> void:
+	classroom_text.hide()
+	feedback_text.show()
+	feedback_text.text = "Failed to locate %s" % ObjectiveManager.current_objective.name
+	await get_tree().create_timer(3.0).timeout
+	ObjectiveManager.choose_random_objective()
+	classroom_text.show()
+	feedback_text.hide()
+	start_timer(time_limit)
+	
