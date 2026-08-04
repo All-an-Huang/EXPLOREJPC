@@ -1,5 +1,8 @@
 extends Node
 
+signal objective_reached(building_name: String)
+signal new_objective_chosen(building_name: String)
+
 var building_pool: Array[Node] = []
 var current_objective: Node = null
 
@@ -11,8 +14,9 @@ func choose_random_objective():
 		return
 		
 	current_objective = building_pool[randi() % building_pool.size()]
-	print("Chosen objective: ", current_objective.name)
+	new_objective_chosen.emit(current_objective.name)
 	
 func check_objective_reached(building: Node) -> void:
 	if building == current_objective:
-		print("Objective reached")
+		objective_reached.emit(building.name)
+		print("objective reached")

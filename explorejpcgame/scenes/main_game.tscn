@@ -58,170 +58,374 @@ transform = Transform3D(0.31506944, 0.9490685, 1.738426e-07, -9.255919e-09, -4.2
 use_collision = true
 polygon = PackedVector2Array(-4.3239746, -2.5077133, -5.2031403, 2.9700851, 0.4296646, 2.7069092, -0.16537476, -2.6947937)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C1" unique_id=2110182289]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C1/Arrival Zone" unique_id=57996719]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="C2" type="CSGPolygon3D" parent="Classrooms" unique_id=1455419440]
 transform = Transform3D(0.31506944, 0.9490685, 1.738426e-07, -9.255919e-09, -4.272017e-08, 4, 0.9490684, -0.31506944, -1.870131e-08, 107.66322, 4, -115.839386)
 use_collision = true
 polygon = PackedVector2Array(-2.0394287, -2.272728, -2.2467003, 3.0758362, 2.0558662, 2.910286, 2.8770523, -2.490242)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C2" unique_id=138137026]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C2/Arrival Zone" unique_id=1369432699]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C3" type="CSGPolygon3D" parent="Classrooms" unique_id=1832391961]
 transform = Transform3D(0.31506944, 0.9490685, 1.738426e-07, -9.255919e-09, -4.272017e-08, 4, 0.9490684, -0.31506944, -1.870131e-08, 107.18296, 4, -122.53945)
 use_collision = true
 polygon = PackedVector2Array(-0.8383446, -3.6070938, -1.2867279, 1.5885849, 4.1144066, 1.4257431, 4.322529, -3.9536896)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C3" unique_id=1636937057]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C3/Arrival Zone" unique_id=1691941742]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="C4" type="CSGPolygon3D" parent="Classrooms" unique_id=470004285]
 transform = Transform3D(0.3150694, 0.94906855, 1.7384257e-07, -9.255917e-09, -4.272017e-08, 4, 0.9490685, -0.31506944, -1.8701312e-08, 104.708466, 4, -127.75018)
 use_collision = true
-polygon = PackedVector2Array(-2.5862808, -0.6478195, -3.3808594, 2.8190079, 4.317974, 2.36734, 4.6700706, -1.285141)
+polygon = PackedVector2Array(-0.66184235, -1.9788513, -0.9734497, 2.2298431, 4.317974, 2.36734, 4.6709137, -1.5507202)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C4" unique_id=665056282]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C4/Arrival Zone" unique_id=532127204]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C5" type="CSGPolygon3D" parent="Classrooms" unique_id=1236691174]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 102.06487, 4, -125.746864)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 98.137535, 4.038357, -126.21582)
 use_collision = true
-polygon = PackedVector2Array(-3.2416077, -1.3828506, -3.21278, 2.8743286, 1.6738014, 1.7090454, 1.5472412, -1.2958527)
+polygon = PackedVector2Array(-3.0576477, 1.5693054, -2.7764893, 9.429749, 0.87779236, 8.940826, 0.41003418, 1.7532654)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C5" unique_id=948521376]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C5/Arrival Zone" unique_id=924495909]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C6" type="CSGPolygon3D" parent="Classrooms" unique_id=1929253002]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 99.1273, 4, -124.25844)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 96.29, 4.038357, -125.38221)
 use_collision = true
-polygon = PackedVector2Array(-3.26305, -0.32553864, -3.1987076, 1.8414993, 3.6224213, 1.8973694, 3.5265198, 0.0039749146)
+polygon = PackedVector2Array(-3.26305, -0.32553864, -2.9823227, 3.6858673, 3.7207108, 3.8092346, 3.5161285, -0.18736267)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C6" unique_id=221438180]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C6/Arrival Zone" unique_id=914547313]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C7" type="CSGPolygon3D" parent="Classrooms" unique_id=613410382]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 91.65967, 4, -120.929436)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 88.54634, 4.038357, -121.82655)
 use_collision = true
-polygon = PackedVector2Array(-2.9922905, -1.2844391, -2.9876633, 1.0521011, 2.953659, 0.3802414, 3.0042381, -2.031311)
+polygon = PackedVector2Array(-2.9922905, -1.2844391, -2.9650269, 1.523529, 3.215004, 1.1847687, 3.1508484, -1.7653503)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C7" unique_id=1357826854]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C7/Arrival Zone" unique_id=1810726272]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C8" type="CSGPolygon3D" parent="Classrooms" unique_id=2061883248]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 89.00689, 4, -119.58531)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 85.82418, 4.038357, -120.318245)
 use_collision = true
-polygon = PackedVector2Array(-3.036541, -1.5230713, -2.9814262, 1.5767441, 3.015335, 0.8468933, 2.9504967, -1.6587143)
+polygon = PackedVector2Array(-3.036541, -1.5230713, -3.1498108, 1.7568359, 3.0169067, 1.2611389, 2.9504967, -1.6587143)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C8" unique_id=1692415354]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C8/Arrival Zone" unique_id=1582556698]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C9" type="CSGPolygon3D" parent="Classrooms" unique_id=964631738]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 86.07251, 4, -118.09852)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 82.34607, 4.038357, -118.5537)
 use_collision = true
-polygon = PackedVector2Array(-3.0490112, -1.0211182, -2.9743538, 1.730423, 2.9206047, 1.5901337, 2.8493996, -1.1440277)
+polygon = PackedVector2Array(-3.0490112, -1.0211182, -3.0638885, 2.2655258, 2.939804, 2.20504, 2.8493996, -1.1440277)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C9" unique_id=405292451]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C9/Arrival Zone" unique_id=2136017454]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C10" type="CSGPolygon3D" parent="Classrooms" unique_id=788800481]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 83.18738, 4, -116.36421)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 79.49694, 4.038357, -116.902466)
 use_collision = true
 polygon = PackedVector2Array(-3.401291, -1.3545761, -3.250637, 2.2732964, 3.5032272, 2.0979462, 3.3653374, -1.1267014)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C10" unique_id=1675992912]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C10/Arrival Zone" unique_id=649535478]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="C11" type="CSGPolygon3D" parent="Classrooms" unique_id=949463545]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 79.9422, 4, -114.70679)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 76.29259, 4.038357, -115.214165)
 use_collision = true
 polygon = PackedVector2Array(-3.451458, -1.4570847, -3.4010963, 2.23983, 3.3238907, 2.438652, 3.2732887, -1.0332108)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C11" unique_id=429559715]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C11/Arrival Zone" unique_id=450003549]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="C12" type="CSGPolygon3D" parent="Classrooms" unique_id=1180995718]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 76.74396, 4, -113.09006)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 73.13323, 4, -113.56299)
 use_collision = true
-polygon = PackedVector2Array(-3.5072365, -1.249382, -3.4456673, 2.073944, 3.2236214, 2.4887352, 3.0530434, -1.2295113)
+polygon = PackedVector2Array(-3.5159836, -1.5345535, -3.4456673, 2.073944, 3.2236214, 2.4887352, 3.015396, -1.6515427)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C12" unique_id=2008401684]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C12/Arrival Zone" unique_id=1015048704]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C13" type="CSGPolygon3D" parent="Classrooms" unique_id=686304622]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 73.8635, 4, -111.6667)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 69.16155, 4, -111.6667)
 use_collision = true
-polygon = PackedVector2Array(-3.6351967, -1.5237045, -3.4910355, 1.9061737, 3.0858116, 1.9919052, 2.9425316, -2.1092377)
+polygon = PackedVector2Array(-3.6351967, -1.5237045, -3.3713074, 2.7810974, 3.1121826, 2.7243652, 2.9425316, -2.1092377)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C13" unique_id=1246886585]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C13/Arrival Zone" unique_id=1465062945]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C14" type="CSGPolygon3D" parent="Classrooms" unique_id=611316902]
-transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 69.16318, 4, -111.7455)
+transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 59.233566, 4, -111.7455)
 use_collision = true
-polygon = PackedVector2Array(-2.8008423, -0.7773304, -2.7767982, 0.9940071, 2.682167, 2.4840012, 2.6663628, 0.888299)
+polygon = PackedVector2Array(-2.8008423, -0.7773304, -2.95298, 4.558159, 2.2176132, 5.43853, 2.6663628, 0.888299)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C14" unique_id=1501275485]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C14/Arrival Zone" unique_id=982405547]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C15" type="CSGPolygon3D" parent="Classrooms" unique_id=651437546]
-transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 66.913506, 4, -107.4699)
+transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 57.017048, 4, -107.4699)
 use_collision = true
-polygon = PackedVector2Array(-2.1411972, -2.9274855, -1.948555, 1.5656633, 1.2353439, 1.8610363, 0.81201553, -2.5793896)
+polygon = PackedVector2Array(-2.1411972, -2.9274855, -1.9470596, 1.2267036, 2.8076782, 1.9449539, 2.4874878, -2.2462158)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C15" unique_id=447966022]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C15/Arrival Zone" unique_id=974274576]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="C16" type="CSGPolygon3D" parent="Classrooms" unique_id=1330295772]
-transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 96.70943, 4, -114.80795)
+transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 96.9155, 3.999999, -113.614815)
 use_collision = true
 polygon = PackedVector2Array(-1.9824944, -2.3170776, -2.8152466, 2.2867126, 1.6522675, 2.2859116, 2.3536377, -2.3581505)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C16" unique_id=1762379164]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C16/Arrival Zone" unique_id=1141384883]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="C17" type="CSGPolygon3D" parent="Classrooms" unique_id=1832777098]
-transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 97.762314, 4, -110.9067)
+transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 97.96838, 3.999999, -109.71356)
 use_collision = true
 polygon = PackedVector2Array(-1.5883293, -2.38562, -2.3054085, 2.3170586, 0.87643814, 2.371746, 2.1710052, -2.4699936)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C17" unique_id=727723831]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C17/Arrival Zone" unique_id=1545622901]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="C18" type="CSGPolygon3D" parent="Classrooms" unique_id=1744514228]
-transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 98.85525, 4, -106.85701)
+transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 99.06132, 3.999999, -105.66387)
 use_collision = true
 polygon = PackedVector2Array(-1.9255142, -2.407875, -3.289589, 2.4282227, 1.1356506, 2.4131699, 2.292797, -2.4305954)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C18" unique_id=497382544]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C18/Arrival Zone" unique_id=1061068257]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="C19" type="CSGPolygon3D" parent="Classrooms" unique_id=629552697]
-transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 99.89009, 4, -103.02255)
+transform = Transform3D(0.26057214, 0.9654544, 1.7384252e-07, -6.8108204e-09, -4.317752e-08, 4, 0.9654545, -0.26057208, -1.8701265e-08, 100.09616, 3.999999, -101.829414)
 use_collision = true
 polygon = PackedVector2Array(-1.5407715, -2.3520088, -2.6751556, 2.3459854, 1.7577896, 2.2920303, 2.648859, -2.313652)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/C19" unique_id=1317493452]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/C19/Arrival Zone" unique_id=1270348322]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="INT1" type="CSGPolygon3D" parent="Classrooms" unique_id=576158656]
-transform = Transform3D(1.0838807, 3.8503516, 1.7384258e-07, -2.9104513e-08, -1.724062e-07, 4, 3.8503516, -1.0838807, -1.87013e-08, 58.576546, 4, -79.36718)
+transform = Transform3D(1.0838807, 3.8503516, 1.7384258e-07, -2.9104513e-08, -1.724062e-07, 4, 3.8503516, -1.0838807, -1.87013e-08, 55.608757, 4, -80.223915)
 use_collision = true
-polygon = PackedVector2Array(-0.78813124, -0.5215337, -0.9775424, 0.4367261, 0.74299574, 0.43467236, 0.9275849, -0.47062802)
+polygon = PackedVector2Array(-0.7846403, -0.5436497, -0.9775424, 0.4367261, 0.74299574, 0.43467236, 0.9399128, -0.49889374)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/INT1" unique_id=1634956033]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/INT1/Arrival Zone" unique_id=1277878018]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="INT2" type="CSGPolygon3D" parent="Classrooms" unique_id=629573390]
-transform = Transform3D(1.0838807, 3.8503516, 1.7384258e-07, -2.9104513e-08, -1.724062e-07, 4, 3.8503516, -1.0838807, -1.87013e-08, 53.85624, 4, -78.87691)
+transform = Transform3D(1.0838807, 3.8503516, 1.7384258e-07, -2.9104513e-08, -1.724062e-07, 4, 3.8503516, -1.0838807, -1.87013e-08, 50.88845, 4, -79.73364)
 use_collision = true
 polygon = PackedVector2Array(-1.1558242, 0.24962401, -0.9462228, 0.61536956, 0.5640044, 0.65689707, 0.6498065, 0.29453444, 0.84998703, 0.28119254, 0.9627676, -0.36906314, -0.3405962, -0.38420773, -0.9267564, -0.03522563, -0.9023137, 0.10049462)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/INT2" unique_id=2006384108]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/INT2/Arrival Zone" unique_id=924253457]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="E1" type="CSGPolygon3D" parent="Classrooms" unique_id=1860922291]
 transform = Transform3D(3.8136065, 1.206818, 1.7384254e-07, -1.6009933e-07, -7.027929e-08, 4, 1.206818, -3.8136065, -1.8701716e-08, 71.16446, 8, -81.70776)
 use_collision = true
 polygon = PackedVector2Array(-0.62135816, -0.758688, -0.8734889, 0.5470133, 0.25306988, 0.50740147, 0.59798765, -0.7238064)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/E1" unique_id=288058258]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/E1/Arrival Zone" unique_id=1866331692]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="E2" type="CSGPolygon3D" parent="Classrooms" unique_id=2052024188]
 transform = Transform3D(3.8136065, 1.206818, 1.7384254e-07, -1.6009933e-07, -7.027929e-08, 4, 1.206818, -3.8136065, -1.8701716e-08, 65.29177, 8, -82.827065)
 use_collision = true
 polygon = PackedVector2Array(-0.24670696, -0.5858021, -0.5398934, 0.72556305, 0.5669353, 0.72592163, 0.8192611, -0.5843096)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/E2" unique_id=1655809875]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/E2/Arrival Zone" unique_id=1373056896]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="M4" type="CSGPolygon3D" parent="Classrooms" unique_id=245587613]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -21.48774, 4, -38.407627)
 use_collision = true
 polygon = PackedVector2Array(-7.602642, -3.9454422, -9.473356, 1.1523895, -1.6759253, 3.614151, 0.29493713, -2.2087975)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M4" unique_id=240755081]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M4/Arrival Zone" unique_id=270929396]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="M5" type="CSGPolygon3D" parent="Classrooms" unique_id=1970669258]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-7.4665575, -4.3121147, -9.793021, 2.568489, -2.0108738, 4.3551865, 0.45030975, -2.9419403)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M5" unique_id=1910191208]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M5/Arrival Zone" unique_id=1605528432]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="M6" type="CSGPolygon3D" parent="Classrooms" unique_id=1733621215]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-3.420474, -10.206928, -5.3534775, -3.929512, 0.3650322, -2.9970207, 2.7311897, -9.264664)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M6" unique_id=1496918584]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M6/Arrival Zone" unique_id=1089926447]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="M7" type="CSGPolygon3D" parent="Classrooms" unique_id=1519109245]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-13.99378, -11.132439, -15.135441, -5.596176, -5.353758, -3.9138832, -3.6698027, -9.517073)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M7" unique_id=1029695170]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M7/Arrival Zone" unique_id=1103722685]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="M8" type="CSGPolygon3D" parent="Classrooms" unique_id=1630561269]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-20.23505, -12.122248, -21.307568, -6.61887, -15.157129, -5.6071167, -14.007201, -11.1423435)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M8" unique_id=1126326005]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M8/Arrival Zone" unique_id=1946175029]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="M9" type="CSGPolygon3D" parent="Classrooms" unique_id=137162579]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-28.593418, -13.414724, -30.79567, -7.4096375, -23.519697, -5.46574, -21.706314, -12.297049)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M9" unique_id=1203356631]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M9/Arrival Zone" unique_id=2107274147]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="M10" type="CSGPolygon3D" parent="Classrooms" unique_id=852464272]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-30.797668, -7.4019146, -32.996212, -1.6918144, -25.21685, -0.5357361, -23.533442, -5.432804)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M10" unique_id=2125775032]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M10/Arrival Zone" unique_id=799816542]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="M11" type="CSGPolygon3D" parent="Classrooms" unique_id=2124484591]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-32.99654, -1.6599579, -34.877213, 2.5782013, -26.657797, 4.234276, -25.242298, -0.48376083)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M11" unique_id=88677119]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M11/Arrival Zone" unique_id=832018661]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="M13" type="CSGPolygon3D" parent="Classrooms" unique_id=445654586]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-39.547855, 15.765942, -41.504894, 20.87642, -32.58544, 23.520405, -30.735003, 18.174416)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M13" unique_id=1507660046]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M13/Arrival Zone" unique_id=1911083686]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="M14" type="CSGPolygon3D" parent="Classrooms" unique_id=1317445337]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -23.825073, 4, -44.816917)
 use_collision = true
 polygon = PackedVector2Array(-41.510597, 20.882687, -43.716763, 26.830788, -34.34898, 28.114243, -32.635773, 23.523727)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M14" unique_id=1064699542]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M14/Arrival Zone" unique_id=1342532492]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="M15" type="CSGPolygon3D" parent="Classrooms" unique_id=1080387017]
 transform = Transform3D(-0.99992436, 0.012304321, 2.1513706e-09, 0, -4.371139e-08, 4, 0.012304321, 0.99992436, 1.7483234e-07, -47.294785, 4, -40.951305)
 use_collision = true
 polygon = PackedVector2Array(-39.268295, 15.303085, -40.947952, 19.810856, -30.326118, 22.059666, -28.444866, 16.726818)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/M15" unique_id=1126565224]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/M15/Arrival Zone" unique_id=1833194567]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="RSC 1" type="CSGPolygon3D" parent="Classrooms" unique_id=1570552587 groups=["classroom"]]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 110.714676, 4, -74.10718)
@@ -229,10 +433,9 @@ use_collision = true
 polygon = PackedVector2Array(-5.990865, 0.30641174, -6.4795074, 2.4773712, -5.5070596, 4.6441727, -2.201191, 5.006321, -0.6201153, -0.85585785, -3.8825111, -1.3450546)
 script = ExtResource("3_0rdsr")
 
-[node name="Arrival Zone" type="Area3D" parent="Classrooms/RSC 1" unique_id=2114900876]
-transform = Transform3D(1, 0, 0, 0, 1, -4.440892e-15, 0, -2.7755576e-16, 1, -24.18668, 8.289032, -0.9999998)
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/RSC 1" unique_id=570044956]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/RSC 1/Arrival Zone" unique_id=1846246704]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/RSC 1/Arrival Zone" unique_id=2145021275]
 transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
 shape = SubResource("BoxShape3D_w0p78")
 
@@ -241,20 +444,31 @@ transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-0
 use_collision = true
 polygon = PackedVector2Array(3.1417751, -0.24345398, -0.5625744, -0.8149185, -2.124875, 4.9693947, 1.184823, 5.7630997, 1.5957718, 4.2569046, 3.748868, 4.4673347, 5.0016603, 1.1707077, 2.581418, 0.89676666)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/RSC 2" unique_id=773564286]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/RSC 2/Arrival Zone" unique_id=1991294707]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="IT1" type="CSGPolygon3D" parent="Classrooms" unique_id=302951557]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 116.57633, 8, -100.58425)
 use_collision = true
-polygon = PackedVector2Array(-25.199574, 3.9134445, -21.18879, 7.443512, -17.431728, 6.390747, -18.290491, 2.0233536)
+polygon = PackedVector2Array(-25.6582, 4.647087, -20.922607, 7.4483795, -19.161995, 7.4283524, -19.416786, 4.738182)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/IT1" unique_id=756291466]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/IT1/Arrival Zone" unique_id=585223296]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="IT2" type="CSGPolygon3D" parent="Classrooms" unique_id=1077574425]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 116.3692, 8, -99.04171)
 use_collision = true
-polygon = PackedVector2Array(-27.878454, 1.4254379, -25.171299, 3.8741913, -18.30455, 2.024109, -19.435764, -2.369217)
+polygon = PackedVector2Array(-28.295784, 1.7925797, -24.152065, 4.2572937, -19.865105, 4.335617, -20.947166, -0.11506653)
 
-[node name="Arrival Zone" type="Area3D" parent="Classrooms/IT2" unique_id=570044956]
-transform = Transform3D(1, 0, 0, 0, 1, -4.440892e-15, 0, -2.7755576e-16, 1, -24.18668, 8.289032, -0.9999998)
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/IT2" unique_id=1091236816]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/IT2/Arrival Zone" unique_id=2145021275]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/IT2/Arrival Zone" unique_id=2035851789]
 transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
 shape = SubResource("BoxShape3D_w0p78")
 
@@ -263,116 +477,230 @@ transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-0
 use_collision = true
 polygon = PackedVector2Array(-12.367161, -0.198555, -9.605914, 5.9393806, -2.568346, 4.8771706, -5.23193, -1.7394257)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/D1" unique_id=1742682393]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/D1/Arrival Zone" unique_id=952849298]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="D2" type="CSGPolygon3D" parent="Classrooms" unique_id=2058108920]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.17198, 4, -81.18218)
 use_collision = true
 polygon = PackedVector2Array(-4.310508, 0.4690628, -2.541153, 4.880554, 3.995037, 3.530098, 2.1962128, -0.75286484)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/D2" unique_id=539017821]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/D2/Arrival Zone" unique_id=1945920338]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="D3" type="CSGPolygon3D" parent="Classrooms" unique_id=1628557937]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.172, 4, -81.182)
 use_collision = true
 polygon = PackedVector2Array(1.3085289, -3.1042786, 4.007082, 3.5252533, 10.403776, 2.3477364, 7.3591957, -4.2653275)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/D3" unique_id=1013116384]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/D3/Arrival Zone" unique_id=648274535]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="D5" type="CSGPolygon3D" parent="Classrooms" unique_id=1938473190]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.82651, 4, -87.678)
 use_collision = true
 polygon = PackedVector2Array(-0.69781303, 4.625679, 1.2450218, 9.950886, 6.006546, 8.446083, 3.926138, 3.7664986)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/D5" unique_id=583436185]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/D5/Arrival Zone" unique_id=1316062895]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="D6" type="CSGPolygon3D" parent="Classrooms" unique_id=935077101]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.877945, 8, -87.68353)
 use_collision = true
 polygon = PackedVector2Array(-17.44334, 4.094055, -16.107723, 7.32032, -10.85564, 6.4168777, -12.125569, 3.1156998)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/D6" unique_id=1923232690]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/D6/Arrival Zone" unique_id=1029927850]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="D7" type="CSGPolygon3D" parent="Classrooms" unique_id=573440855]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.877945, 8, -87.68353)
 use_collision = true
 polygon = PackedVector2Array(-12.099281, 3.1280022, -10.845468, 6.36578, -6.064375, 5.611904, -7.4226856, 2.2591896)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/D7" unique_id=1435514127]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/D7/Arrival Zone" unique_id=1826394384]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="D8" type="CSGPolygon3D" parent="Classrooms" unique_id=114299845]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.878006, 8, -87.68342)
 use_collision = true
 polygon = PackedVector2Array(-7.398693, 2.2621078, -6.0489197, 5.573063, -1.6898098, 4.8080063, -3.1772118, 1.3993225)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/D8" unique_id=1701791583]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/D8/Arrival Zone" unique_id=1610140266]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="D9" type="CSGPolygon3D" parent="Classrooms" unique_id=26795548]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 85.877945, 8, -87.68353)
 use_collision = true
 polygon = PackedVector2Array(-3.1445065, 1.3997078, -1.6544266, 4.79797, 3.9122505, 3.7945595, 2.4374638, 0.29535294)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/D9" unique_id=712262688]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/D9/Arrival Zone" unique_id=970808326]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="N1" type="CSGPolygon3D" parent="Classrooms" unique_id=35971937]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
 use_collision = true
 polygon = PackedVector2Array(0.15080261, -1.8169403, -1.1395988, 3.930893, 2.1573334, 4.710266, 3.583332, -1.1450424)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/N1" unique_id=2028166119]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/N1/Arrival Zone" unique_id=1667856688]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="N2" type="CSGPolygon3D" parent="Classrooms" unique_id=1115598251]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
 use_collision = true
 polygon = PackedVector2Array(-3.1357403, -2.448822, -4.6817017, 2.897026, -1.1933136, 3.911232, 0.07516098, -1.76651)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/N2" unique_id=1752134364]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/N2/Arrival Zone" unique_id=30165311]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="N3" type="CSGPolygon3D" parent="Classrooms" unique_id=79787836]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
 use_collision = true
-polygon = PackedVector2Array(-8.116838, -3.3173447, -10.110077, 1.5932541, -4.713976, 2.8818054, -3.1895237, -2.4301453)
+polygon = PackedVector2Array(-8.521652, -3.2675476, -9.318901, -0.15168, -5.8839874, 0.76982117, -5.4391403, -2.6502075)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/N3" unique_id=719911827]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/N3/Arrival Zone" unique_id=788975643]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="N4" type="CSGPolygon3D" parent="Classrooms" unique_id=1911629967]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
 use_collision = true
-polygon = PackedVector2Array(-13.072361, -4.251938, -13.962448, 0.54048157, -10.149685, 1.6285629, -8.176336, -3.318657)
+polygon = PackedVector2Array(-13.072361, -4.251938, -13.569443, -1.0834122, -9.329926, -0.18585968, -8.555191, -3.2657242)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/N4" unique_id=1306561969]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/N4/Arrival Zone" unique_id=1229661123]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="N5" type="CSGPolygon3D" parent="Classrooms" unique_id=430481114]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
 use_collision = true
-polygon = PackedVector2Array(-13.952698, 0.6095886, -15.106535, 5.372917, -11.15366, 5.1964493, -10.107168, 1.6445847)
+polygon = PackedVector2Array(-13.982704, 0.7444229, -14.197563, 5.1252365, -10.178886, 5.554947, -9.366615, 1.9351883)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/N5" unique_id=115895362]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/N5/Arrival Zone" unique_id=397370071]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="N6" type="CSGPolygon3D" parent="Classrooms" unique_id=2146417070]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 114.50196, 8, -99.04171)
 use_collision = true
-polygon = PackedVector2Array(-10.086239, 1.592308, -11.108219, 5.1572647, -7.06118, 5.873047, -5.765545, 2.6731873)
+polygon = PackedVector2Array(-9.344681, 1.9023285, -10.162804, 5.529518, -6.1371765, 6.2077637, -5.1206894, 2.9945831)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/N6" unique_id=60402007]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/N6/Arrival Zone" unique_id=214936722]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="L1" type="CSGPolygon3D" parent="Classrooms" unique_id=2058443012]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 111.788795, 4, -105.46603)
 use_collision = true
 polygon = PackedVector2Array(-1.7999077, -2.8309631, -2.560604, 3.1284409, 3.0601578, 4.102463, 3.8026848, -1.9071121)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/L1" unique_id=648217267]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/L1/Arrival Zone" unique_id=350763509]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="L2" type="CSGPolygon3D" parent="Classrooms" unique_id=1253574471]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 113.312614, 4, -99.987305)
 use_collision = true
 polygon = PackedVector2Array(-2.5316467, -3.0402222, -2.7637444, 3.0074158, 3.0601578, 4.102463, 3.8026848, -1.9071121)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/L2" unique_id=1406507099]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/L2/Arrival Zone" unique_id=1723648706]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="L3" type="CSGPolygon3D" parent="Classrooms" unique_id=1143671037]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 115.27458, 4, -93.79855)
 use_collision = true
 polygon = PackedVector2Array(-1.7785072, -2.7776108, -2.7106342, 3.0980682, 3.5577507, 4.2672195, 3.7436256, -1.7492447)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/L3" unique_id=37872779]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/L3/Arrival Zone" unique_id=804794770]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="L4" type="CSGPolygon3D" parent="Classrooms" unique_id=1128707833]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 116.98989, 4, -87.905754)
 use_collision = true
 polygon = PackedVector2Array(-1.7999077, -2.8309631, -2.51869, 2.1405869, 3.4608288, 3.2756424, 4.2437363, -1.7581253)
+
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/L4" unique_id=779918237]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/L4/Arrival Zone" unique_id=812739734]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
 
 [node name="L5" type="CSGPolygon3D" parent="Classrooms" unique_id=1457775274]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 113.27426, 4, -86.592964)
 use_collision = true
 polygon = PackedVector2Array(-1.5687141, -1.536171, -1.9591522, 2.586525, 5.2450924, 3.277794, 6.3401184, 0.603508)
 
+[node name="Arrival Zone" type="Area3D" parent="Classrooms/L5" unique_id=303176862]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Classrooms/L5/Arrival Zone" unique_id=531053920]
+transform = Transform3D(0.9724289, -0.23320419, -2.5483278e-09, 0.23320419, 0.9724289, -3.0132496e-10, 2.5484117e-09, -3.013287e-10, 1, -4.5368233, 1.642868, -0.44307327)
+shape = SubResource("BoxShape3D_w0p78")
+
 [node name="Admin Rooms" type="Node3D" parent="." unique_id=1885011654]
 
 [node name="language faculity" type="CSGPolygon3D" parent="Admin Rooms" unique_id=281340843]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 94.50131, 4, -124.111374)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 91.78085, 4.038357, -125.26917)
 use_collision = true
-polygon = PackedVector2Array(-1.3744469, -2.8386612, -1.2606163, 3.78611, 5.5150948, 4.0346146, 5.5704613, -0.0004119873, 0.9041176, -0.13637543, 0.82561874, -3.0615616)
+polygon = PackedVector2Array(-1.3744469, -2.8386612, -1.2606163, 3.78611, 5.550888, 3.8352814, 5.6220703, 0.09446716, 1.1180344, -0.16726685, 0.998909, -2.9251404)
 
 [node name="C f toilet" type="CSGPolygon3D" parent="Admin Rooms" unique_id=135158889]
-transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 95.98638, 4, -121.75267)
+transform = Transform3D(0.45195207, 0.8920421, 1.7384255e-07, -1.5471521e-08, -4.088174e-08, 4, 0.8920421, -0.45195207, -1.8701394e-08, 93.613106, 4.038357, -122.80316)
 use_collision = true
-polygon = PackedVector2Array(-1.9335175, -3.4819489, -1.8783073, -0.4992218, 1.8461609, -0.46362305, 1.757782, -3.8256226)
+polygon = PackedVector2Array(-2.060196, -3.5289764, -1.8783073, -0.4992218, 1.8461609, -0.46362305, 1.757782, -3.8256226)
 
 [node name="C m toilet" type="CSGPolygon3D" parent="Admin Rooms" unique_id=1735041686]
-transform = Transform3D(-0.08113852, -3.9868114, 4.3460638e-08, -1.1335524e-09, 1.7478675e-07, 1, -0.99670285, 0.3245541, -4.6752997e-09, 69.84778, 4, -110.39803)
+transform = Transform3D(-0.08113852, -3.9868114, 4.3460638e-08, -1.1335524e-09, 1.7478675e-07, 1, -0.99670285, 0.3245541, -4.6752997e-09, 65.116905, 4, -110.39803)
 use_collision = true
-polygon = PackedVector2Array(-2.5734444, -0.8094568, -1.9069519, -0.27746153, 3.8004189, -0.302289)
+polygon = PackedVector2Array(-2.5734444, -0.8094568, -1.820755, 0.29971886, 3.3605423, 0.121313095, 3.7615814, -0.32746315)
 depth = 4.0
 
 [node name="maths faculty" type="CSGPolygon3D" parent="Admin Rooms" unique_id=2004301219]
-transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 66.529625, 4, -112.011)
+transform = Transform3D(-0.20871405, 0.9779768, 1.7384258e-07, 1.36431275e-08, -4.152771e-08, 4, 0.9779767, 0.20871407, -1.8700995e-08, 56.633167, 4, -112.011)
 use_collision = true
 polygon = PackedVector2Array(-3.1019402, 1.734539, 2.327896, 3.4252253, 2.224453, -1.5798349, -3.1133614, -2.2902584)
 
@@ -419,10 +747,10 @@ polygon = PackedVector2Array(-25.398947, 13.09827, -27.586296, 19.277275, -20.72
 [node name="Library" type="CSGPolygon3D" parent="Admin Rooms" unique_id=1755307344]
 transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 116.33234, 4, -99.67508)
 use_collision = true
-polygon = PackedVector2Array(-29.009262, 1.8097687, -20.044437, 7.1194763, -14.22217, 5.0270233, -13.630138, -2.2085342)
+polygon = PackedVector2Array(-29.009262, 1.8097687, -20.044437, 7.1194763, -16.798866, 7.0866394, -17.0205, 2.5129013, -14.320259, 2.5878525, -13.541946, -2.2090073)
 
 [node name="Careers" type="CSGPolygon3D" parent="Admin Rooms" unique_id=179779215]
-transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 96.66646, 4, -77.932976)
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 97.72597, 4.000002, -79.36883)
 use_collision = true
 polygon = PackedVector2Array(-0.1271677, -1.2826385, 1.4246597, 2.3372688, 10.37672, 0.44375992, 8.776957, -3.1409912)
 
@@ -446,6 +774,29 @@ transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-0
 use_collision = true
 polygon = PackedVector2Array(-5.72995, 2.679741, -6.995262, 5.882675, -4.082508, 6.992714, -0.37701797, 4.237076)
 
+[node name="ITOffice" type="CSGPolygon3D" parent="Admin Rooms" unique_id=1079722728]
+transform = Transform3D(-0.10695824, -0.9942635, -1.7384255e-07, 0, -4.371139e-08, 4, -0.9942635, 0.10695824, 1.8701172e-08, 116.3692, 8, -99.04171)
+use_collision = true
+polygon = PackedVector2Array(-20.961143, -0.13954926, -20.362373, 2.4247284, -17.870743, 2.1786423, -18.12204, 0.95127106, -16.290817, 0.76818085, -16.376076, -1.3479156)
+
+[node name="Library Stair" type="Node3D" parent="Admin Rooms" unique_id=2005680019]
+transform = Transform3D(-0.10695824, -0.9942635, -4.3460638e-08, 0, -4.371139e-08, 1, -0.9942635, 0.10695824, 4.675293e-09, 97.726, 1, -79.369)
+
+[node name="LibaryStair1" type="CSGPolygon3D" parent="Admin Rooms/Library Stair" unique_id=638577744]
+transform = Transform3D(1, 0, 0, 0, 1, -1.110223e-15, 0, -1.110223e-15, 1, -0.0024719238, -0.009010315, 0.0034045577)
+use_collision = true
+polygon = PackedVector2Array(0.9588547, -15.5019455, 1.3676834, -14.235191, 3.6159668, -14.20285, 3.8903732, -15.641151)
+
+[node name="LibaryStair2" type="CSGPolygon3D" parent="Admin Rooms/Library Stair" unique_id=1924088048]
+transform = Transform3D(1, 0, 0, 0, 1, 2.220446e-15, 0, -1.110223e-15, 2, 0, 0, 1)
+use_collision = true
+polygon = PackedVector2Array(1.0019836, -16.863754, 0.73036957, -15.364281, 3.892395, -15.61924, 3.92865, -16.786293)
+
+[node name="LibaryStair3" type="CSGPolygon3D" parent="Admin Rooms/Library Stair" unique_id=887036152]
+transform = Transform3D(1, 0, 8.881784e-16, 0, 1, 1.44329e-14, 0, -1.110223e-15, 3, 0, 0, 2)
+use_collision = true
+polygon = PackedVector2Array(0.71338654, -18.36821, 0.7943039, -16.822289, 4.0852127, -16.799904, 4.145111, -18.276558)
+
 [node name="MinimapViewport" type="SubViewport" parent="." unique_id=228081809]
 size = Vector2i(150, 150)
 
@@ -455,4 +806,4 @@ projection = 1
 size = 30.0
 script = ExtResource("3_d2op2")
 
-[connection signal="body_entered" from="Classrooms/IT2/Arrival Zone" to="Classrooms/RSC 1" method="_on_arrival_zone_body_entered"]
+[connection signal="body_entered" from="Classrooms/RSC 1/Arrival Zone" to="Classrooms/RSC 1" method="_on_arrival_zone_body_entered"]
