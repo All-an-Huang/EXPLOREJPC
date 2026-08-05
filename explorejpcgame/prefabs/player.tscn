@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://46o86vlay8a4" path="res://scenes/pause_menu.tscn" id="2_4dohe"]
 [ext_resource type="Script" uid="uid://dcig7x55lkm60" path="res://scripts/player_gui.gd" id="3_r66lb"]
 [ext_resource type="PackedScene" uid="uid://bviciish4j65h" path="res://prefabs/icon_component.tscn" id="4_1txc5"]
+[ext_resource type="PackedScene" uid="uid://banmqi6gy0hwf" path="res://prefabs/arrow.tscn" id="4_u51tk"]
 [ext_resource type="Texture2D" uid="uid://cm7vhdyiblshy" path="res://icon.svg" id="5_ht1c8"]
 [ext_resource type="Texture2D" uid="uid://ddjb0wyhrbif3" path="res://assets/minimapcircle.svg" id="6_g2jcq"]
 
@@ -30,6 +31,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
 [node name="Camera3D" type="Camera3D" parent="head" unique_id=1739413294]
 cull_mask = 524287
+
+[node name="Arrow" parent="head/Camera3D" unique_id=1080729451 instance=ExtResource("4_u51tk")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.5, -2)
 
 [node name="IconComponent" parent="head" unique_id=1338128912 instance=ExtResource("4_1txc5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
