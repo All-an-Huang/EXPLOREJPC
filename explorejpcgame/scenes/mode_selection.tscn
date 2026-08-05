@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://c47gh2s1tc7v4"]
 
+[ext_resource type="Script" uid="uid://cbr372nphwrl7" path="res://scripts/mode_selection.gd" id="1_jv0sf"]
+
 [node name="mode_selection" type="Control" unique_id=1855412504]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,41 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jv0sf")
+
+[node name="self" type="Button" parent="." unique_id=2057664185]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 178.0
+offset_right = 714.0
+offset_bottom = 239.0
+text = "Self Exploration"
+
+[node name="guided" type="Button" parent="." unique_id=901273438]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 258.0
+offset_right = 714.0
+offset_bottom = 319.0
+text = "Guided Exploration"
+
+[node name="assessed" type="Button" parent="." unique_id=214402445]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 337.0
+offset_right = 718.0
+offset_bottom = 398.0
+text = "Assessed Exploration"
+
+[node name="menu" type="Button" parent="." unique_id=1042385319]
+layout_mode = 0
+offset_left = 431.0
+offset_top = 414.0
+offset_right = 716.0
+offset_bottom = 475.0
+text = "Back to Menu"
+
+[connection signal="pressed" from="self" to="." method="_on_self_pressed"]
+[connection signal="pressed" from="guided" to="." method="_on_guided_pressed"]
+[connection signal="pressed" from="assessed" to="." method="_on_assessed_pressed"]
+[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]

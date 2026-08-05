@@ -7,6 +7,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	print(global_position.y)
-	if ObjectiveManager.current_objective:
+	if ObjectiveManager.current_objective and GameSettings.current_mode == GameSettings.GameMode.GUIDED:
 		look_at(ObjectiveManager.current_objective.global_position, Vector3.UP)
+	else:
+		hide()

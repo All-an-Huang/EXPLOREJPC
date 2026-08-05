@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://dck5u1ykk08vr"]
+
+[ext_resource type="Script" uid="uid://c2n3ewh8l0tnf" path="res://scripts/character.gd" id="1_72ieh"]
+[ext_resource type="PackedScene" uid="uid://46o86vlay8a4" path="res://scenes/pause_menu.tscn" id="2_4dohe"]
+[ext_resource type="Script" uid="uid://dcig7x55lkm60" path="res://scripts/player_gui.gd" id="3_r66lb"]
+[ext_resource type="PackedScene" uid="uid://bviciish4j65h" path="res://prefabs/icon_component.tscn" id="4_1txc5"]
+[ext_resource type="PackedScene" uid="uid://banmqi6gy0hwf" path="res://prefabs/arrow.tscn" id="4_u51tk"]
+[ext_resource type="Texture2D" uid="uid://cm7vhdyiblshy" path="res://icon.svg" id="5_ht1c8"]
+[ext_resource type="Texture2D" uid="uid://ddjb0wyhrbif3" path="res://assets/minimapcircle.svg" id="6_g2jcq"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ipu61"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ygxny"]
+points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4760704, 0.49888408, 0.16971254, 0.5591441, 0.46417162, 0.23105091, -0.8035912, 0.32045516, 0.40741014, 0.651043, -0.24352328, -0.4827893, 0.59484255, 0.082213186, -0.3628679, -0.68231165, 0.2896967, 0.46904355, -0.65452886, -0.06627126, -0.12744367, 0.8427015, -0.33810276, -0.39343542, -0.6839421, -0.24471663, 0.43825462, 0.62330925, 0.20084947, 0.0841477, 0.977454, 0.11479468, -0.06820232, -0.9764576, -0.12927033, 0.20054972, -0.56312895, -0.4514544, -0.18552664, 0.59545326, -0.4534751, -0.27336287, 0.59226835, 0.40775412, -0.0069364863, -0.47682306, 0.49966025, 0.37582088, -0.5886136, 0.31695515, 0.111579016, 0.5630594, -0.48117727, -0.41725034, 0.5278656, -0.27049688, -0.48454633, -0.59697217, -0.06650971, -0.27974695, 0.90856135, 0.05333608, -0.25019687, -0.8807117, 0.20531891, 0.263647, -0.90277094, -0.1273943, 0.29336792, 0.8715263, -0.15719566, 0.3734115, -0.5263189, -0.32824618, 0.4996626, 0.47664148, -0.0068885577, 0.053105574, 0.8750009, 0.32470253, -0.15454252, -0.5908538, 0.4658794, -0.09727988, -0.7823577, -0.39818847, -0.3876489, -0.49817133, 0.31564978, -0.30067965, -0.58799505, -0.38890144)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_1txc5"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1821036914 groups=["player"]]
+script = ExtResource("1_72ieh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=843136425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_ipu61")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1880739403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("ConvexPolygonShape3D_ygxny")
+
+[node name="head" type="Node3D" parent="." unique_id=459012729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="Camera3D" type="Camera3D" parent="head" unique_id=1739413294]
+cull_mask = 524287
+
+[node name="Arrow" parent="head/Camera3D" unique_id=1080729451 instance=ExtResource("4_u51tk")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.5, -2)
+
+[node name="IconComponent" parent="head" unique_id=1338128912 instance=ExtResource("4_1txc5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
+map_icon = ExtResource("5_ht1c8")
+
+[node name="PlayerGui" type="Control" parent="." unique_id=1687169458 node_paths=PackedStringArray("minimap_rect")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("3_r66lb")
+minimap_rect = NodePath("MarginContainer/CircleClip/MinimapRect")
+
+[node name="MarginContainer" type="MarginContainer" parent="PlayerGui" unique_id=1780032118]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="CircleClip" type="TextureRect" parent="PlayerGui/MarginContainer" unique_id=334857250]
+clip_children = 2
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource("6_g2jcq")
+expand_mode = 1
+
+[node name="MinimapRect" type="TextureRect" parent="PlayerGui/MarginContainer/CircleClip" unique_id=896377952]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 150.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = SubResource("PlaceholderTexture2D_1txc5")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PlayerGui/MarginContainer" unique_id=175643052]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PlayerGui/MarginContainer/HBoxContainer" unique_id=1736450334]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Panel" type="Panel" parent="PlayerGui/MarginContainer/HBoxContainer/VBoxContainer" unique_id=20966801]
+custom_minimum_size = Vector2(150, 200)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PlayerGui/MarginContainer/HBoxContainer/VBoxContainer/Panel" unique_id=384079083]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 149.0
+offset_bottom = 69.0
+text = "Locate"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+
+[node name="Classroom" type="RichTextLabel" parent="PlayerGui/MarginContainer/HBoxContainer/VBoxContainer/Panel" unique_id=1515149230]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 40.0
+offset_right = 153.0
+offset_bottom = 172.0
+text = "N3"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+
+[node name="Feedback" type="RichTextLabel" parent="PlayerGui/MarginContainer/HBoxContainer/VBoxContainer/Panel" unique_id=1950151482]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 79.0
+offset_right = 150.0
+offset_bottom = 192.0
+text = "Congradulations for finding"
+scroll_active = false
+autowrap_mode = 2
+autowrap_trim_flags = 0
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="PlayerGui" unique_id=1435658495]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 6.0
+offset_right = 642.0
+offset_bottom = 61.0
+
+[node name="TimerText" type="RichTextLabel" parent="PlayerGui/Panel" unique_id=1868063528]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 15.0
+offset_right = 75.0
+offset_bottom = 43.0
+text = "Timer"
+
+[node name="pause menu" parent="." unique_id=2102071224 instance=ExtResource("2_4dohe")]
+visible = false

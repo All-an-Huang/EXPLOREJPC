@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://banmqi6gy0hwf"]
 
-[ext_resource type="Script" uid="uid://dx1d3h4c7ehde" path="res://arrow.gd" id="1_eah3a"]
+[ext_resource type="Script" uid="uid://dx1d3h4c7ehde" path="res://scripts/arrow.gd" id="1_eah3a"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u51tk"]
 no_depth_test = true
